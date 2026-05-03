@@ -1,0 +1,2642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ekathva Foundation — A Tribute | Anantapuramu</title>
+<meta name="description" content="A tribute to Ekathva Foundation Society, Anantapuramu — An NGO changing lives through education, environment, women empowerment and disaster response.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --g:#1B5E35;--gm:#2A7D4F;--gs:#3DA06A;--gp:#E6F4EC;--gl:#F0F9F3;
+  --am:#C97B0A;--aw:#E8941A;--ap:#FEF5E4;
+  --cream:#FAFAF6;--white:#FFFFFF;
+  --td:#162419;--tm:#3D5A47;--ts:#6B8572;
+  --bdr:#D0E8D9;--shd:rgba(27,94,53,0.08);
+  --r:12px;--rl:20px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--td);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;line-height:1.15}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--cream)}
+::-webkit-scrollbar-thumb{background:var(--gs);border-radius:3px}
+::selection{background:var(--gp);color:var(--g)}
+
+/* ── TRIBUTE BANNER ── */
+.tribute-banner{background:linear-gradient(90deg,var(--g),var(--gm),var(--am));color:#fff;text-align:center;padding:0.6rem 1rem;font-size:0.78rem;font-weight:600;letter-spacing:0.04em;position:relative;z-index:200}
+.tribute-banner a{color:#FFD580;text-decoration:underline;margin-left:8px}
+.tribute-banner a:hover{color:#fff}
+
+/* ── NAVBAR ── */
+.nav{position:fixed;top:36px;left:0;right:0;z-index:100;transition:all 0.35s ease}
+.nav.scrolled{top:0;background:rgba(250,250,246,0.97);backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--bdr)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:70px}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.logo-img{height:44px;width:auto;filter:drop-shadow(0 2px 6px rgba(27,94,53,0.2))}
+.logo-text{display:flex;flex-direction:column;line-height:1.1}
+.logo-text strong{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);font-weight:700}
+.logo-text span{font-size:0.62rem;color:var(--ts);letter-spacing:0.1em;text-transform:uppercase;font-weight:600}
+.nav-links{display:flex;align-items:center;gap:0.15rem}
+.nav-links a{padding:0.45rem 0.9rem;font-size:0.86rem;font-weight:600;color:var(--tm);border-radius:8px;transition:all 0.2s}
+.nav-links a:hover{color:var(--g);background:var(--gp)}
+.nav-right{display:flex;align-items:center;gap:0.75rem}
+.nav-official{padding:0.5rem 1rem;border:1.5px solid var(--bdr);color:var(--tm);border-radius:40px;font-size:0.8rem;font-weight:600;transition:all 0.2s}
+.nav-official:hover{border-color:var(--g);color:var(--g)}
+.nav-cta{padding:0.55rem 1.25rem;background:var(--g);color:#fff;border-radius:40px;font-size:0.82rem;font-weight:700;transition:all 0.25s}
+.nav-cta:hover{background:var(--gm);transform:translateY(-1px);box-shadow:0 4px 14px rgba(27,94,53,0.3)}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:8px;border-radius:8px;transition:background 0.2s}
+.hamburger:hover{background:var(--gp)}
+.hamburger span{width:22px;height:2px;background:var(--g);border-radius:2px;transition:all 0.3s;display:block}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;inset:0;top:106px;background:var(--white);z-index:99;padding:1.5rem;flex-direction:column;gap:0.4rem;border-top:1px solid var(--bdr);animation:slideDown 0.3s ease;overflow-y:auto}
+.mobile-menu.open{display:flex}
+.mobile-menu a{padding:0.9rem 1.25rem;font-size:0.95rem;font-weight:600;color:var(--tm);border-radius:10px;transition:all 0.2s}
+.mobile-menu a:hover,.mobile-menu a.active{background:var(--gp);color:var(--g)}
+.mobile-cta-wrap{display:flex;gap:0.75rem;margin-top:0.75rem;flex-direction:column}
+.mobile-menu .mc1{padding:0.9rem;background:var(--g);color:#fff;text-align:center;border-radius:12px;font-weight:700}
+.mobile-menu .mc2{padding:0.9rem;border:1.5px solid var(--g);color:var(--g);text-align:center;border-radius:12px;font-weight:700}
+@keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── HERO ── */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:106px;position:relative;overflow:hidden;background:linear-gradient(160deg,var(--gl) 0%,var(--cream) 50%,var(--ap) 100%)}
+.hero-logo-bg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(70vw,500px);opacity:0.05;pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite}
+@keyframes breathe{0%,100%{opacity:0.04;transform:translate(-50%,-50%) scale(1)}50%{opacity:0.07;transform:translate(-50%,-50%) scale(1.04)}}
+
+/* People in circle SVG animation */
+.circle-anim{position:absolute;right:-40px;top:50%;transform:translateY(-50%);width:min(45vw,460px);opacity:0.12;pointer-events:none;z-index:0}
+.circle-anim svg{animation:rotateSlow 40s linear infinite}
+@keyframes rotateSlow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.orbit-dot{animation:orbitPop 3s ease-in-out infinite}
+
+.hero-inner{max-width:1200px;margin:0 auto;padding:3rem 1.5rem 6rem;display:grid;grid-template-columns:1.1fr 0.9fr;gap:2rem;align-items:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:0.4rem 1.1rem;background:var(--white);border:1px solid var(--bdr);border-radius:40px;font-size:0.72rem;font-weight:700;color:var(--gm);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem;box-shadow:0 2px 8px var(--shd)}
+.hero-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--gs);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(1.5)}}
+.hero-title{font-size:clamp(2.6rem,5vw,4.2rem);color:var(--g);font-weight:700;margin-bottom:1.1rem;letter-spacing:-0.02em;line-height:1.1}
+.hero-title em{font-style:italic;color:var(--am)}
+.hero-sub{font-size:1rem;color:var(--tm);line-height:1.85;margin-bottom:1.75rem;max-width:500px;font-weight:400}
+.hero-actions{display:flex;gap:0.9rem;flex-wrap:wrap;align-items:center;margin-bottom:2.25rem}
+.btn{display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:0.88rem;border-radius:40px;padding:0.8rem 1.75rem;transition:all 0.25s;letter-spacing:0.02em}
+.btn-p{background:var(--g);color:#fff}.btn-p:hover{background:var(--gm);transform:translateY(-2px);box-shadow:0 8px 22px rgba(27,94,53,0.3)}
+.btn-s{border:2px solid var(--g);color:var(--g)}.btn-s:hover{background:var(--gp);transform:translateY(-2px)}
+.btn-off{border:1.5px solid var(--bdr);color:var(--tm)}.btn-off:hover{border-color:var(--g);color:var(--g)}
+.hero-stats{display:flex;gap:2rem;padding-top:1.75rem;border-top:1px solid var(--bdr)}
+.hstat .num{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:var(--g);line-height:1}
+.hstat .lbl{font-size:0.7rem;color:var(--ts);font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-top:3px}
+.hero-right{display:flex;justify-content:center;align-items:center}
+
+/* People in circle - right side large */
+.circle-hero{width:min(90%,380px);margin:0 auto}
+
+/* ── SECTION BASE ── */
+section{padding:5.5rem 0}
+.si{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.slabel{display:inline-flex;align-items:center;gap:8px;font-size:0.7rem;font-weight:700;color:var(--gm);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.75rem}
+.slabel::before{content:'';width:20px;height:2px;background:var(--gs);border-radius:2px}
+.stitle{font-size:clamp(1.9rem,4vw,2.8rem);color:var(--g);margin-bottom:0.9rem;font-weight:700;line-height:1.1}
+.stitle em{font-style:italic;color:var(--am)}
+.ssub{font-size:0.975rem;color:var(--tm);max-width:560px;line-height:1.85}
+
+/* ── ABOUT ── */
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-top:3rem}
+.about-text p{font-size:0.965rem;color:var(--tm);line-height:1.9;margin-bottom:0.9rem}
+.about-text strong{color:var(--g);font-weight:700}
+.about-actions{display:flex;gap:0.85rem;flex-wrap:wrap;margin-top:1.75rem}
+
+/* Vision/Mission accordion */
+.vm-block{margin-top:1.25rem;border:1.5px solid var(--bdr);border-radius:var(--r);overflow:hidden}
+.vm-header{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.35rem;cursor:pointer;transition:background 0.2s;user-select:none}
+.vm-header:hover{background:var(--gl)}
+.vm-header h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);font-weight:600;display:flex;align-items:center;gap:10px}
+.vm-chevron{width:22px;height:22px;border-radius:50%;background:var(--gp);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform 0.35s}
+.vm-chevron svg{width:11px;height:11px;stroke:var(--g);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.vm-block.open .vm-chevron{transform:rotate(180deg);background:var(--g)}
+.vm-block.open .vm-chevron svg{stroke:#fff}
+.vm-body{max-height:0;overflow:hidden;transition:max-height 0.45s cubic-bezier(0.4,0,0.2,1),padding 0.35s}
+.vm-body.open{max-height:400px}
+.vm-body-inner{padding:0 1.35rem 1.35rem;font-size:0.92rem;color:var(--tm);line-height:1.85;border-top:1px solid var(--bdr)}
+.vm-body-inner p{padding-top:1rem}
+
+/* Legal card */
+.legal-card{background:var(--gl);border:1.5px solid var(--bdr);border-radius:var(--rl);padding:1.75rem;position:relative;overflow:hidden}
+.legal-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--gs)}
+.legal-row{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;padding:0.6rem 0;border-bottom:1px solid var(--bdr);font-size:0.875rem}
+.legal-row:last-child{border:none}
+.legal-row .lk{color:var(--ts);font-weight:600;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.06em;flex-shrink:0}
+.legal-row .lv{color:var(--td);font-weight:600;text-align:right}
+.upi-pill{background:var(--gp);border:1px solid var(--gs);border-radius:8px;padding:0.6rem 1rem;text-align:center;margin-top:0.75rem}
+.upi-pill p{color:var(--g);font-weight:700;font-size:0.95rem}
+.upi-pill small{color:var(--gm);font-size:0.72rem;font-weight:600}
+
+/* ── BOARD ── */
+.board{background:var(--gl)}
+.board-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;margin-top:2.75rem}
+.board-card{background:var(--white);border-radius:var(--rl);overflow:hidden;border:1px solid var(--bdr);transition:all 0.35s;cursor:pointer;position:relative}
+.board-card:hover{box-shadow:0 12px 40px var(--shd);transform:translateY(-6px);border-color:var(--gs)}
+.board-photo{height:200px;background:linear-gradient(135deg,var(--gp),var(--gl));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.board-initial{font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:700;color:var(--g);opacity:0.25;line-height:1;user-select:none}
+.board-name-overlay{position:absolute;bottom:0;left:0;right:0;padding:1rem;background:linear-gradient(transparent,rgba(27,94,53,0.6));color:#fff;text-align:center}
+.board-name-overlay h4{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:700}
+.board-name-overlay span{font-size:0.72rem;opacity:0.9;letter-spacing:0.05em;font-weight:600}
+.board-body{padding:1.25rem}
+.board-quote{font-size:0.85rem;color:var(--tm);line-height:1.75;font-style:italic;border-left:3px solid var(--gs);padding-left:0.85rem;margin-bottom:1rem}
+.board-socials{display:flex;gap:0.5rem;flex-wrap:wrap}
+.social-btn{padding:0.3rem 0.7rem;border-radius:6px;font-size:0.7rem;font-weight:700;letter-spacing:0.04em;transition:all 0.2s;border:1px solid}
+.social-btn.li{border-color:#0077B5;color:#0077B5}.social-btn.li:hover{background:#0077B5;color:#fff}
+.social-btn.tw{border-color:#1DA1F2;color:#1DA1F2}.social-btn.tw:hover{background:#1DA1F2;color:#fff}
+.social-btn.fb{border-color:#1877F2;color:#1877F2}.social-btn.fb:hover{background:#1877F2;color:#fff}
+.social-btn.ig{border-color:#E4405F;color:#E4405F}.social-btn.ig:hover{background:#E4405F;color:#fff}
+
+/* Board modal */
+.bmodal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:300;display:none;align-items:center;justify-content:center;padding:1.5rem;backdrop-filter:blur(6px)}
+.bmodal-overlay.open{display:flex}
+.bmodal{background:var(--white);border-radius:var(--rl);max-width:500px;width:100%;position:relative;overflow:hidden;animation:modalIn 0.4s cubic-bezier(0.34,1.56,0.64,1)}
+@keyframes modalIn{from{opacity:0;transform:scale(0.85) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.bmodal-header{height:180px;background:linear-gradient(135deg,var(--g),var(--gm));display:flex;align-items:center;justify-content:center;position:relative}
+.bmodal-initial{font-family:'Cormorant Garamond',serif;font-size:7rem;font-weight:700;color:rgba(255,255,255,0.15);line-height:1;user-select:none}
+.bmodal-name{position:absolute;bottom:1.25rem;left:1.5rem;color:#fff}
+.bmodal-name h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700}
+.bmodal-name span{font-size:0.78rem;opacity:0.8;font-weight:600;letter-spacing:0.06em}
+.bmodal-close{position:absolute;top:1rem;right:1rem;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;cursor:pointer;transition:background 0.2s}
+.bmodal-close:hover{background:rgba(255,255,255,0.3)}
+.bmodal-body{padding:1.75rem}
+.bmodal-body p{font-size:0.9rem;color:var(--tm);line-height:1.85;margin-bottom:1.25rem}
+.bmodal-body blockquote{border-left:3px solid var(--gs);padding-left:1rem;color:var(--gm);font-style:italic;font-size:0.92rem;line-height:1.75;margin-bottom:1.25rem}
+.bmodal-socials{display:flex;gap:0.6rem;flex-wrap:wrap}
+
+/* Community strip */
+.community-strip{background:var(--g);color:#fff;padding:3.5rem 0;text-align:center}
+.community-strip h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:0.6rem;font-weight:700}
+.community-strip p{color:rgba(255,255,255,0.7);font-size:0.95rem;max-width:520px;margin:0 auto 1.75rem}
+.donor-grid{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;margin-top:1.5rem}
+.dstat .dnum{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:700;color:#fff;line-height:1}
+.dstat .dnum span{color:#FFD580}
+.dstat .dlbl{font-size:0.72rem;color:rgba(255,255,255,0.6);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-top:4px}
+
+/* ── WORK ── */
+.work{background:var(--white)}
+.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2.75rem}
+.work-card{border-radius:var(--rl);overflow:hidden;border:1px solid var(--bdr);transition:all 0.35s;cursor:pointer;position:relative;background:var(--cream)}
+.work-card:hover{box-shadow:0 12px 40px var(--shd);transform:translateY(-5px);border-color:var(--gs)}
+.work-img{height:180px;overflow:hidden;position:relative}
+.work-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.55s ease}
+.work-card:hover .work-img img{transform:scale(1.07)}
+.work-img-overlay{position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(27,94,53,0.5))}
+.work-tag-over{position:absolute;top:12px;left:12px;padding:0.25rem 0.7rem;border-radius:40px;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;background:rgba(255,255,255,0.9);color:var(--g)}
+.work-body{padding:1.35rem}
+.work-body h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--g);margin-bottom:0.5rem;font-weight:600}
+.work-body p{font-size:0.85rem;color:var(--tm);line-height:1.75}
+.work-link{display:inline-flex;align-items:center;gap:5px;margin-top:0.85rem;font-size:0.8rem;font-weight:700;color:var(--gm);transition:gap 0.2s}
+.work-card:hover .work-link{gap:10px;color:var(--g)}
+
+/* ── GALLERY ── */
+.gallery{background:var(--gl)}
+.gallery-tabs{display:flex;gap:0.5rem;flex-wrap:wrap;margin:2rem 0 1.75rem}
+.gtab{padding:0.55rem 1.2rem;border-radius:40px;font-size:0.82rem;font-weight:600;color:var(--tm);border:1.5px solid var(--bdr);background:var(--white);transition:all 0.2s;cursor:pointer}
+.gtab.active,.gtab:hover{background:var(--g);color:#fff;border-color:var(--g)}
+.gset{display:none}.gset.active{display:grid}
+.photos-grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:0.85rem}
+.photo-item{border-radius:var(--r);overflow:hidden;aspect-ratio:1;position:relative;cursor:pointer;border:1px solid var(--bdr)}
+.photo-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.45s}
+.photo-item:hover img{transform:scale(1.08)}
+.photo-item-overlay{position:absolute;inset:0;background:rgba(27,94,53,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem}
+.photo-item:hover .photo-item-overlay{background:rgba(27,94,53,0.4)}
+.photo-item-label{color:#fff;font-size:0.72rem;font-weight:700;opacity:0;transition:opacity 0.3s;text-shadow:0 1px 4px rgba(0,0,0,0.4)}
+.photo-item:hover .photo-item-label{opacity:1}
+
+/* Videos */
+.videos-grid{grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
+.video-card{background:var(--white);border-radius:var(--rl);overflow:hidden;border:1px solid var(--bdr);transition:all 0.3s}
+.video-card:hover{box-shadow:0 8px 28px var(--shd);transform:translateY(-4px)}
+.video-thumb{position:relative;height:160px;overflow:hidden;background:var(--g);cursor:pointer}
+.video-thumb img{width:100%;height:100%;object-fit:cover;opacity:0.8}
+.play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:52px;height:52px;background:rgba(255,255,255,0.92);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform 0.25s,background 0.25s}
+.video-thumb:hover .play-btn{transform:translate(-50%,-50%) scale(1.12);background:#fff}
+.play-btn svg{width:20px;height:20px;fill:var(--g);margin-left:3px}
+.video-info{padding:1rem 1.1rem}
+.video-info h4{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--g);margin-bottom:0.35rem;font-weight:600}
+.video-info p{font-size:0.78rem;color:var(--ts)}
+.gallery-more{text-align:center;margin-top:2.25rem}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.9);z-index:400;display:none;align-items:center;justify-content:center;padding:2rem}
+.lightbox.open{display:flex}
+.lightbox img{max-width:90vw;max-height:85vh;border-radius:8px;object-fit:contain}
+.lightbox-close{position:absolute;top:1.5rem;right:1.5rem;width:40px;height:40px;background:rgba(255,255,255,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.3rem;cursor:pointer;transition:background 0.2s}
+.lightbox-close:hover{background:rgba(255,255,255,0.3)}
+
+/* ── ROADMAP ── */
+.roadmap{background:var(--white)}
+.timeline{position:relative;margin-top:3rem;padding-bottom:2rem}
+.timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gs),var(--gp));transform:translateX(-50%)}
+.titem{display:flex;margin-bottom:2.25rem;position:relative}
+.titem:nth-child(odd){flex-direction:row-reverse}
+.titem:nth-child(odd) .tcontent{text-align:right;margin-right:3rem;margin-left:0}
+.titem:nth-child(even) .tcontent{margin-left:3rem}
+.tcontent{width:calc(50% - 3.5rem);background:var(--white);border:1.5px solid var(--bdr);border-radius:var(--rl);padding:1.25rem 1.5rem;transition:all 0.3s;position:relative}
+.tcontent:hover{border-color:var(--gs);box-shadow:0 6px 24px var(--shd);transform:translateY(-3px)}
+.tyear{display:inline-block;background:var(--g);color:#fff;font-size:0.7rem;font-weight:700;letter-spacing:0.08em;padding:0.2rem 0.65rem;border-radius:40px;margin-bottom:0.6rem}
+.tcontent h4{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--g);margin-bottom:0.4rem;font-weight:600}
+.tcontent p{font-size:0.82rem;color:var(--tm);line-height:1.7}
+.tdot{position:absolute;left:50%;top:1.5rem;transform:translateX(-50%);width:18px;height:18px;background:var(--gs);border:3px solid var(--white);border-radius:50%;box-shadow:0 0 0 3px var(--gs);z-index:1}
+.timeline-end{text-align:center;padding-top:1rem;position:relative;z-index:1}
+.timeline-end .tec{display:inline-flex;align-items:center;gap:8px;padding:0.65rem 1.5rem;background:var(--g);color:#fff;border-radius:40px;font-size:0.82rem;font-weight:700}
+.timeline-end .tec::before{content:'';width:8px;height:8px;background:#FFD580;border-radius:50%;animation:pulse 1.5s infinite}
+
+/* ── IMPACT ── */
+.impact{background:var(--g);color:#fff}
+.impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.75rem;margin-top:2.75rem}
+.icard{text-align:center;padding:2rem 1rem;border-radius:var(--rl);background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);transition:all 0.3s}
+.icard:hover{background:rgba(255,255,255,0.12);transform:translateY(-5px)}
+.inum{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;line-height:1;margin-bottom:0.4rem}
+.inum span{color:#FFD580}
+.ilbl{font-size:0.75rem;color:rgba(255,255,255,0.65);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;line-height:1.5}
+
+/* ── GET INVOLVED ── */
+.involved{background:var(--gl)}
+.involved-wrap{background:linear-gradient(135deg,var(--g) 0%,var(--gm) 100%);border-radius:28px;padding:4rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;position:relative;overflow:hidden;margin-top:0}
+.involved-wrap::before{content:'';position:absolute;top:-80px;right:-80px;width:300px;height:300px;background:rgba(255,255,255,0.04);border-radius:50%}
+.involved-text .slabel{color:rgba(255,255,255,0.6)}.involved-text .slabel::before{background:rgba(255,255,255,0.4)}
+.involved-text .stitle{color:#fff}.involved-text .ssub{color:rgba(255,255,255,0.7);max-width:none}
+.involved-text blockquote{margin-top:1.25rem;border-left:3px solid rgba(255,255,255,0.3);padding-left:1rem;color:rgba(255,255,255,0.55);font-style:italic;font-size:0.85rem;line-height:1.75}
+.inv-options{display:flex;flex-direction:column;gap:0.9rem;position:relative;z-index:1}
+.inv-opt{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);border-radius:14px;padding:1.1rem 1.35rem;display:flex;align-items:center;gap:1rem;transition:all 0.25s;cursor:pointer;text-align:left;color:#fff}
+.inv-opt:hover{background:rgba(255,255,255,0.18);transform:translateX(6px)}
+.inv-opt-icon{font-size:1.3rem;width:40px;flex-shrink:0;text-align:center}
+.inv-opt-text strong{display:block;font-weight:700;font-size:0.9rem;margin-bottom:2px}
+.inv-opt-text span{color:rgba(255,255,255,0.62);font-size:0.78rem}
+.inv-arr{margin-left:auto;color:rgba(255,255,255,0.4);font-size:1.1rem;transition:transform 0.2s}
+.inv-opt:hover .inv-arr{transform:translateX(5px);color:rgba(255,255,255,0.85)}
+
+/* Membership banner */
+.member-banner{background:var(--ap);border:1.5px solid rgba(201,123,10,0.25);border-radius:var(--rl);padding:1.75rem 2rem;margin-top:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.member-banner h4{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:#7A4E0A;font-weight:600;margin-bottom:0.3rem}
+.member-banner p{font-size:0.82rem;color:#9A6A1A}
+.member-banner .mbtn{padding:0.7rem 1.5rem;background:var(--am);color:#fff;border-radius:40px;font-weight:700;font-size:0.85rem;transition:all 0.2s;flex-shrink:0}
+.member-banner .mbtn:hover{background:var(--aw);transform:translateY(-2px);box-shadow:0 6px 18px rgba(201,123,10,0.3)}
+
+/* ── CONTACT ── */
+.contact{background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2.75rem;align-items:start}
+.cinfo{display:flex;flex-direction:column;gap:1.35rem}
+.citem{display:flex;align-items:flex-start;gap:1rem}
+.cicon{width:44px;height:44px;background:var(--gp);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cicon img{width:24px;height:24px;object-fit:contain}
+.ctext strong{display:block;color:var(--g);font-weight:700;font-size:0.83rem;margin-bottom:3px;letter-spacing:0.03em;text-transform:uppercase}
+.ctext a,.ctext p{color:var(--tm);font-size:0.9rem;line-height:1.65;display:block}
+.ctext a:hover{color:var(--g)}
+.cform{background:var(--cream);border-radius:var(--rl);padding:2rem;border:1.5px solid var(--bdr)}
+.cform h3{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--g);margin-bottom:0.4rem;font-weight:600}
+.cform p.fnote{font-size:0.78rem;color:var(--ts);margin-bottom:1.5rem}
+.cform p.fnote strong{color:var(--gm)}
+.fg{margin-bottom:1.1rem}
+.fg label{display:block;font-size:0.8rem;font-weight:700;color:var(--tm);margin-bottom:0.4rem;letter-spacing:0.03em}
+.fg input,.fg textarea{width:100%;padding:0.7rem 1rem;border:1.5px solid var(--bdr);border-radius:10px;font-family:'Nunito',sans-serif;font-size:0.88rem;color:var(--td);background:var(--white);transition:border-color 0.2s;outline:none}
+.fg input:focus,.fg textarea:focus{border-color:var(--gs)}
+.fg textarea{min-height:100px;resize:vertical}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:0.85rem}
+.fsub{width:100%;padding:0.85rem;background:var(--g);color:#fff;border-radius:10px;font-weight:700;font-size:0.88rem;transition:all 0.25s;font-family:'Nunito',sans-serif}
+.fsub:hover{background:var(--gm);box-shadow:0 6px 18px rgba(27,94,53,0.3);transform:translateY(-1px)}
+
+/* ── FOOTER ── */
+footer{background:var(--td);color:#fff;padding:3.5rem 0 1.5rem}
+.footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.75rem}
+.fbrand img{height:44px;width:auto;filter:brightness(10);margin-bottom:1rem}
+.fbrand p{font-size:0.83rem;color:rgba(255,255,255,0.45);line-height:1.8;max-width:240px;margin-top:0.75rem}
+.official-note{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:0.85rem 1rem;margin-top:1rem;font-size:0.78rem;color:rgba(255,255,255,0.55)}
+.official-note a{color:#FFD580;font-weight:700}
+.fcol h4{font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:1.1rem}
+.fcol a{display:block;font-size:0.85rem;color:rgba(255,255,255,0.55);margin-bottom:0.55rem;transition:color 0.2s}
+.fcol a:hover{color:#fff}
+.fbot{padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.07);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.85rem}
+.fbot p{font-size:0.77rem;color:rgba(255,255,255,0.3)}
+.fbot a{font-size:0.77rem;color:rgba(255,255,255,0.3);transition:color 0.2s}.fbot a:hover{color:rgba(255,255,255,0.7)}
+.fbot-links{display:flex;gap:1.25rem}
+
+/* ── SCROLL TO TOP ── */
+.stt{position:fixed;bottom:2rem;right:1.75rem;width:46px;height:46px;background:var(--g);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(27,94,53,0.35);cursor:pointer;z-index:90;opacity:0;transform:translateY(16px);transition:all 0.35s;border:none}
+.stt.visible{opacity:1;transform:translateY(0)}
+.stt:hover{background:var(--gm);transform:translateY(-3px)}
+.stt svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+
+/* ── MODALS ── */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:200;display:none;align-items:center;justify-content:center;padding:1.5rem;backdrop-filter:blur(5px)}
+.modal-overlay.open{display:flex}
+.modal{background:var(--white);border-radius:var(--rl);max-width:440px;width:100%;position:relative;overflow:hidden;animation:modalIn 0.38s cubic-bezier(0.34,1.56,0.64,1)}
+.mhead{background:linear-gradient(135deg,var(--g),var(--gm));padding:1.75rem 1.75rem 1.5rem;color:#fff}
+.mhead h3{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:700;margin-bottom:0.25rem}
+.mhead p{font-size:0.82rem;opacity:0.75}
+.mbody{padding:1.5rem 1.75rem}
+.mclose{position:absolute;top:1rem;right:1rem;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;cursor:pointer;transition:background 0.2s}
+.mclose:hover{background:rgba(255,255,255,0.35)}
+.brow{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;padding:0.65rem 0;border-bottom:1px solid var(--bdr);font-size:0.875rem}
+.brow:last-child{border:none}
+.brow .bk{color:var(--ts);font-weight:600;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.05em;flex-shrink:0}
+.brow .bv{color:var(--td);font-weight:700;text-align:right}
+
+/* ── SCROLL REVEAL ── */
+.rev{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.rev.in{opacity:1;transform:translateY(0)}
+.rev.d1{transition-delay:0.1s}.rev.d2{transition-delay:0.2s}.rev.d3{transition-delay:0.3s}.rev.d4{transition-delay:0.4s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .board-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:900px){
+  .nav-links,.nav-right{display:none}
+  .hamburger{display:flex}
+  .nav{top:36px}.nav.scrolled{top:0}
+  .mobile-menu{top:calc(36px + 70px)}
+  .nav.scrolled ~ .mobile-menu{top:70px}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .about-grid,.contact-grid,.involved-wrap{grid-template-columns:1fr}
+  .involved-wrap{padding:2.5rem 2rem}
+  .work-grid{grid-template-columns:1fr}
+  .impact-grid{grid-template-columns:1fr 1fr}
+  .timeline::before{left:24px;transform:none}
+  .titem,.titem:nth-child(odd){flex-direction:row}
+  .titem:nth-child(odd) .tcontent{text-align:left;margin-right:0;margin-left:3rem}
+  .titem .tcontent,.titem:nth-child(odd) .tcontent{width:calc(100% - 3.5rem);margin-left:3.5rem}
+  .tdot{left:24px;transform:none}
+}
+@media(max-width:640px){
+  .tribute-banner{font-size:0.68rem;line-height:1.6}
+  .board-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .impact-grid{grid-template-columns:1fr 1fr}
+  .hero-stats{gap:1.25rem}
+  .hstat .num{font-size:1.5rem}
+  .involved-wrap{padding:2rem 1.5rem}
+  .member-banner{flex-direction:column}
+  .fg-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- TRIBUTE BANNER -->
+<div class="tribute-banner">
+  ✨ This is a tribute website — built with gratitude for Ekathva Foundation's incredible work.
+  <a href="https://ekathvafoundation.com" target="_blank" rel="noopener">Visit Official Site →</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" onclick="smoothTo(event,'#home')">
+      <img src="https://ekathvafoundation.com/Images/logo.png" alt="Ekathva Foundation Logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="logo-text" style="display:flex">
+        <strong>Ekathva Foundation</strong>
+        <span>Anantapuramu · Est. 2020</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#about" onclick="smoothTo(event,'#about')">About</a>
+      <a href="#work" onclick="smoothTo(event,'#work')">Our Work</a>
+      <a href="#gallery" onclick="smoothTo(event,'#gallery')">Gallery</a>
+      <a href="#roadmap" onclick="smoothTo(event,'#roadmap')">Journey</a>
+      <a href="#involved" onclick="smoothTo(event,'#involved')">Get Involved</a>
+      <a href="#contact" onclick="smoothTo(event,'#contact')">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://ekathvafoundation.com" target="_blank" class="btn nav-official">Official Site ↗</a>
+      <a href="#" class="btn nav-cta" onclick="openModal(event,'donateModal')">Donate Now</a>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="smoothTo(event,'#about');closeMenu()">About Us</a>
+  <a href="#work" onclick="smoothTo(event,'#work');closeMenu()">Our Work</a>
+  <a href="#gallery" onclick="smoothTo(event,'#gallery');closeMenu()">Gallery</a>
+  <a href="#roadmap" onclick="smoothTo(event,'#roadmap');closeMenu()">Our Journey</a>
+  <a href="#board" onclick="smoothTo(event,'#board');closeMenu()">Board Members</a>
+  <a href="#involved" onclick="smoothTo(event,'#involved');closeMenu()">Get Involved</a>
+  <a href="#contact" onclick="smoothTo(event,'#contact');closeMenu()">Contact</a>
+  <div class="mobile-cta-wrap">
+    <a href="#" class="mc1" onclick="openModal(event,'donateModal');closeMenu()">❤️ Donate Now</a>
+    <a href="https://ekathvafoundation.com" target="_blank" class="mc2">Visit Official Site ↗</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <!-- Big transparent logo bg -->
+  <img src="https://ekathvafoundation.com/Images/logo.png" alt="" class="hero-logo-bg" aria-hidden="true">
+
+  <!-- People in circle SVG (decorative) -->
+  <div class="circle-anim" aria-hidden="true">
+    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <!-- Outer circle path -->
+      <circle cx="200" cy="200" r="160" stroke="#1B5E35" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.5"/>
+      <!-- Inner circle -->
+      <circle cx="200" cy="200" r="110" stroke="#3DA06A" stroke-width="1" stroke-dasharray="4 8" opacity="0.4"/>
+      <!-- People figures arranged in circle (8 people) -->
+      <g opacity="0.85">
+        <!-- Person 1 - top -->
+        <g transform="translate(200,60)">
+          <circle cy="-14" r="9" fill="#1B5E35"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#1B5E35" stroke-width="3" stroke-linecap="round"/>
+          <!-- Arms reaching out -->
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#2A7D4F" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 2 - top-right -->
+        <g transform="translate(313,87) rotate(45)">
+          <circle cy="-14" r="9" fill="#2A7D4F"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#2A7D4F" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#3DA06A" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 3 - right -->
+        <g transform="translate(360,200) rotate(90)">
+          <circle cy="-14" r="9" fill="#3DA06A"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#3DA06A" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#1B5E35" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 4 - bottom-right -->
+        <g transform="translate(313,313) rotate(135)">
+          <circle cy="-14" r="9" fill="#C97B0A"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#C97B0A" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#E8941A" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 5 - bottom -->
+        <g transform="translate(200,340) rotate(180)">
+          <circle cy="-14" r="9" fill="#1B5E35"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#1B5E35" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#2A7D4F" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 6 - bottom-left -->
+        <g transform="translate(87,313) rotate(225)">
+          <circle cy="-14" r="9" fill="#2A7D4F"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#2A7D4F" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#3DA06A" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 7 - left -->
+        <g transform="translate(40,200) rotate(270)">
+          <circle cy="-14" r="9" fill="#C97B0A"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#C97B0A" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#E8941A" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 8 - top-left -->
+        <g transform="translate(87,87) rotate(315)">
+          <circle cy="-14" r="9" fill="#3DA06A"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#3DA06A" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#1B5E35" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+      </g>
+      <!-- Center logo/heart -->
+      <g transform="translate(200,200)">
+        <circle r="36" fill="#1B5E35" opacity="0.12"/>
+        <text text-anchor="middle" dominant-baseline="central" font-size="28" fill="#1B5E35" opacity="0.5" font-family="serif">ఏ</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge rev">Registered NGO · AP Govt No. 66 of 2020</div>
+      <h1 class="hero-title rev d1">
+        Building a Better<br>Society, <em>One Life<br>at a Time.</em>
+      </h1>
+      <p class="hero-sub rev d2">Ekathva Foundation Society — rooted in Anantapuramu, driven by compassion. Uniting communities through education, environmental action, women's empowerment, and disaster response since 2020.</p>
+      <div class="hero-actions rev d3">
+        <a href="#work" class="btn btn-p" onclick="smoothTo(event,'#work')">Explore Our Work →</a>
+        <a href="#" class="btn btn-s" onclick="openModal(event,'donateModal')">Support the Cause</a>
+        <a href="https://ekathvafoundation.com" target="_blank" class="btn btn-off">Official Site ↗</a>
+      </div>
+      <div class="hero-stats rev d4">
+        <div class="hstat"><div class="num">2020</div><div class="lbl">Founded</div></div>
+        <div class="hstat"><div class="num">5000+</div><div class="lbl">Lives Touched</div></div>
+        <div class="hstat"><div class="num">3000+</div><div class="lbl">Community Members</div></div>
+        <div class="hstat"><div class="num">AP 66</div><div class="lbl">Registered</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <!-- Tribute note card -->
+      <div style="background:var(--white);border-radius:var(--rl);padding:2rem;border:1.5px solid var(--bdr);box-shadow:0 8px 32px var(--shd);max-width:340px;text-align:center;animation:cardFloat 6s ease-in-out infinite">
+        <img src="https://ekathvafoundation.com/Images/logo.png" alt="Ekathva Logo" style="height:60px;margin:0 auto 1rem;filter:drop-shadow(0 4px 8px rgba(27,94,53,0.2))" onerror="this.style.display='none'">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);margin-bottom:0.6rem;font-weight:600">A Tribute Built with Gratitude</h3>
+        <p style="font-size:0.82rem;color:var(--ts);line-height:1.75;margin-bottom:1rem">This site was created by someone whose life was changed by Ekathva Foundation — as a small thank you to the people who made a difference.</p>
+        <a href="https://ekathvafoundation.com" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:0.78rem;font-weight:700;color:var(--gm);border-bottom:1px solid var(--gs)">Official Website ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="si">
+    <div class="slabel rev">About Us</div>
+    <h2 class="stitle rev">More than an NGO —<br>a <em>movement</em> of unity.</h2>
+    <div class="about-grid">
+      <div class="about-text rev d1">
+        <p>Ekathva Foundation Society was established in <strong>2020</strong> under the Government of Andhra Pradesh (Registration No. 66 of 2020). Based in Anantapuramu, we work tirelessly to uplift underserved communities across the region.</p>
+        <p>The word <strong>"Ekathva"</strong> means <em>oneness</em> — and that spirit drives every program we run. We believe that when communities stand together as one, no challenge is too great.</p>
+        <p>From distributing blankets in winter cold, to running the landmark <strong>LiveInGreen 3K environmental campaign</strong>, to coordinating COVID-19 emergency resources 24×7 — we show up wherever we are needed, always.</p>
+        <p>Our work is built on <strong>transparency, compassion, and long-term impact</strong> — not one-time charity, but sustained, systemic change alongside the people we serve.</p>
+
+        <!-- Vision accordion -->
+        <div class="vm-block rev d2" id="vmv">
+          <div class="vm-header" onclick="toggleVM('vmv')">
+            <h3><span>👁</span> Our Vision</h3>
+            <div class="vm-chevron"><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></div>
+          </div>
+          <div class="vm-body" id="vmv-body">
+            <div class="vm-body-inner">
+              <p>We envision a world where every individual — regardless of caste, gender, or economic standing — has equal access to opportunity, dignity, and a sustainable future. A society bound not by our differences, but by our shared humanity and collective strength.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission accordion -->
+        <div class="vm-block rev d3" id="vmm" style="margin-top:0.75rem">
+          <div class="vm-header" onclick="toggleVM('vmm')">
+            <h3><span>🎯</span> Our Mission</h3>
+            <div class="vm-chevron"><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></div>
+          </div>
+          <div class="vm-body" id="vmm-body">
+            <div class="vm-body-inner">
+              <p>To design and implement community-led programs across plantation awareness, quality education, women's empowerment, and disaster preparedness — creating self-reliant communities capable of driving their own sustainable growth and determining their own futures.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-actions rev d4">
+          <a href="#work" class="btn btn-p" onclick="smoothTo(event,'#work')">See Our Programs →</a>
+          <a href="https://ekathvafoundation.com" target="_blank" class="btn btn-off">Official Site ↗</a>
+        </div>
+      </div>
+
+      <div class="rev d2">
+        <div class="legal-card">
+          <div class="slabel" style="margin-bottom:1rem">Legal Identity</div>
+          <div class="legal-row"><span class="lk">Organisation</span><span class="lv">Ekathva Foundation Society</span></div>
+          <div class="legal-row"><span class="lk">Registered Under</span><span class="lv">Govt. of Andhra Pradesh</span></div>
+          <div class="legal-row"><span class="lk">Registration No.</span><span class="lv">66 of 2020</span></div>
+          <div class="legal-row"><span class="lk">Bank</span><span class="lv">HDFC Bank, Ram Nagar Branch</span></div>
+          <div class="legal-row"><span class="lk">Account No.</span><span class="lv">5020 0056 8511 51</span></div>
+          <div class="legal-row"><span class="lk">IFSC Code</span><span class="lv">HDFC0004246</span></div>
+          <div class="legal-row"><span class="lk">Account Type</span><span class="lv">Current Account</span></div>
+          <div class="legal-row"><span class="lk">Address</span><span class="lv">D.No. 7-156, Prakash Road,<br>Anantapuramu, AP — 515001</span></div>
+          <div class="upi-pill">
+            <small>Google Pay / PhonePe / Any UPI App</small>
+            <p>8106819536@hdfcbank</p>
+          </div>
+          <div style="margin-top:1rem;background:var(--ap);border-radius:8px;padding:0.75rem 1rem;font-size:0.78rem;color:#7A4E0A;line-height:1.6">
+            💡 <strong>Tax Benefit:</strong> Donations are eligible for 50% tax exemption under Section 80G of the Indian Income Tax Act.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOARD MEMBERS -->
+<section id="board" class="board">
+  <div class="si">
+    <div class="slabel rev">Leadership</div>
+    <h2 class="stitle rev">The people <em>behind the mission</em></h2>
+    <p class="ssub rev">Three individuals whose dedication and selfless service have built Ekathva from the ground up — and thousands who stand with them.</p>
+    <div class="board-grid" style="margin-top:2.5rem">
+
+      <!-- Jeevan Sagar -->
+      <div class="board-card rev d1" onclick="openBoardModal('jeevan')">
+        <div class="board-photo">
+          <div class="board-initial">J</div>
+          <div class="board-name-overlay"><h4>Mr. Jeevan Sagar</h4><span>Founder & President</span></div>
+        </div>
+        <div class="board-body">
+          <div class="board-quote">"Our goal is not to just help — it is to walk alongside people until they no longer need our help."</div>
+          <div class="board-socials">
+            <span class="social-btn li">LinkedIn</span>
+            <span class="social-btn fb">Facebook</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chandra Mouli -->
+      <div class="board-card rev d2" onclick="openBoardModal('chandra')">
+        <div class="board-photo" style="background:linear-gradient(135deg,#FEF5E4,#FDF3E0)">
+          <div class="board-initial" style="color:var(--am)">C</div>
+          <div class="board-name-overlay"><h4>Mr. Chandra Mouli</h4><span>Core Member</span></div>
+        </div>
+        <div class="board-body">
+          <div class="board-quote">"Every drop counts. Every action, however small, contributes to the ocean of change we are building."</div>
+          <div class="board-socials">
+            <span class="social-btn li">LinkedIn</span>
+            <span class="social-btn tw">Twitter</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hanumanth Rayadu -->
+      <div class="board-card rev d3" onclick="openBoardModal('hanuma')">
+        <div class="board-photo" style="background:linear-gradient(135deg,#E0F5F3,#D5F0EC)">
+          <div class="board-initial" style="color:#0A7A6B">H</div>
+          <div class="board-name-overlay"><h4>Mr. Hanumanth Rayadu</h4><span>Core Member</span></div>
+        </div>
+        <div class="board-body">
+          <div class="board-quote">"True service is when you give without expecting anything in return — that is the Ekathva spirit."</div>
+          <div class="board-socials">
+            <span class="social-btn li">LinkedIn</span>
+            <span class="social-btn ig">Instagram</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Board Member Modals -->
+<div class="bmodal-overlay" id="modal-jeevan" onclick="closeBoardModal(event,'modal-jeevan')">
+  <div class="bmodal">
+    <div class="bmodal-header">
+      <div class="bmodal-initial">J</div>
+      <div class="bmodal-name"><h3>Mr. Jeevan Sagar</h3><span>Founder & President · Ekathva Foundation</span></div>
+      <button class="bmodal-close" onclick="document.getElementById('modal-jeevan').classList.remove('open')">✕</button>
+    </div>
+    <div class="bmodal-body">
+      <p>Mr. Jeevan Sagar is the visionary founder of Ekathva Foundation Society, Anantapuramu. With deep roots in the community and a heart committed to social justice, he established Ekathva in 2020 with the belief that ordinary people can create extraordinary change.</p>
+      <p>Under his leadership, Ekathva has grown from a small volunteer group to a registered NGO touching thousands of lives across education, environment, women empowerment, and disaster response.</p>
+      <blockquote>"Our goal is not to just help — it is to walk alongside people until they no longer need our help. That is sustainable change."</blockquote>
+      <div class="bmodal-socials">
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn li">LinkedIn</a>
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn fb">Facebook</a>
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn ig">Instagram</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bmodal-overlay" id="modal-chandra" onclick="closeBoardModal(event,'modal-chandra')">
+  <div class="bmodal">
+    <div class="bmodal-header" style="background:linear-gradient(135deg,#7A4E0A,var(--am))">
+      <div class="bmodal-initial">C</div>
+      <div class="bmodal-name"><h3>Mr. Chandra Mouli</h3><span>Core Member · Ekathva Foundation</span></div>
+      <button class="bmodal-close" onclick="document.getElementById('modal-chandra').classList.remove('open')">✕</button>
+    </div>
+    <div class="bmodal-body">
+      <p>Mr. Chandra Mouli is one of the founding pillars of Ekathva Foundation, bringing operational strength and community network expertise that has been essential to the NGO's growth and reach across Anantapuramu.</p>
+      <p>His dedication to every cause — from the Kerala Flood Relief fundraising to the COVID-19 Health Line — reflects his belief that service is not an occasion but a way of life.</p>
+      <blockquote>"Every drop counts. Every action, however small, contributes to the ocean of change we are building together."</blockquote>
+      <div class="bmodal-socials">
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn li">LinkedIn</a>
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn tw">Twitter</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bmodal-overlay" id="modal-hanuma" onclick="closeBoardModal(event,'modal-hanuma')">
+  <div class="bmodal">
+    <div class="bmodal-header" style="background:linear-gradient(135deg,#0A5A50,#0A9B8A)">
+      <div class="bmodal-initial">H</div>
+      <div class="bmodal-name"><h3>Mr. Hanumanth Rayadu</h3><span>Core Member · Ekathva Foundation</span></div>
+      <button class="bmodal-close" onclick="document.getElementById('modal-hanuma').classList.remove('open')">✕</button>
+    </div>
+    <div class="bmodal-body">
+      <p>Mr. Hanumanth Rayadu's energy and grassroots connections have been instrumental in making Ekathva's programs reach the people who need them most. He brings warmth and tireless effort to every initiative.</p>
+      <p>His on-ground work during the Blankets Distribution drive and the Books Distribution program showed the depth of his commitment to Anantapuramu's communities.</p>
+      <blockquote>"True service is when you give without expecting anything in return. That is the Ekathva spirit — and it comes from the heart."</blockquote>
+      <div class="bmodal-socials">
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn li">LinkedIn</a>
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn ig">Instagram</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COMMUNITY STRIP -->
+<div class="community-strip">
+  <div class="si">
+    <div class="slabel" style="justify-content:center;color:rgba(255,255,255,0.6)"><span style="background:rgba(255,255,255,0.3);width:20px;height:2px;display:inline-block;border-radius:2px"></span>Our Community</div>
+    <h2>Backed by <em style="color:#FFD580">thousands</em> who believe in one thing.</h2>
+    <p>Ekathva is not just three people — it is every donor, every volunteer, every person who shared a message or planted a tree or donated a blanket. This is your foundation too.</p>
+    <div class="donor-grid">
+      <div class="dstat"><div class="dnum">3000<span>+</span></div><div class="dlbl">Community Donors</div></div>
+      <div class="dstat"><div class="dnum">500<span>+</span></div><div class="dlbl">Active Volunteers</div></div>
+      <div class="dstat"><div class="dnum">5000<span>+</span></div><div class="dlbl">Lives Touched</div></div>
+      <div class="dstat"><div class="dnum">2500<span>+</span></div><div class="dlbl">3K Run Attendees</div></div>
+    </div>
+    <div style="margin-top:2rem">
+      <a href="#involved" class="btn btn-s" onclick="smoothTo(event,'#involved')" style="background:rgba(255,255,255,0.1);border:2px solid rgba(255,255,255,0.4);color:#fff">Join the Community →</a>
+    </div>
+  </div>
+</div>
+
+<!-- OUR WORK -->
+<section id="work" class="work">
+  <div class="si">
+    <div class="slabel rev">Our Work</div>
+    <h2 class="stitle rev">Four pillars that <em>transform</em> lives</h2>
+    <p class="ssub rev">Click any program to see real photos from our work at the official gallery.</p>
+    <div class="work-grid">
+
+      <div class="work-card rev d1" onclick="window.open('https://ekathvafoundation.com/#Photos','_blank')">
+        <div class="work-img">
+          <img src="https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/10.jpg" alt="Plantation Awareness" loading="lazy">
+          <div class="work-img-overlay"></div>
+          <div class="work-tag-over">🌿 Environment</div>
+        </div>
+        <div class="work-body">
+          <h3>Plantation Awareness</h3>
+          <p>Through the <strong>LiveInGreen 3K Run</strong> (2500+ participants), mass plantation campaigns, and our up-cycled "Green by Ekathva" product line, we're building a culture of environmental stewardship.</p>
+          <div class="work-link">View Photo Gallery <span>→</span></div>
+        </div>
+      </div>
+
+      <div class="work-card rev d2" onclick="window.open('https://ekathvafoundation.com/#Photos','_blank')">
+        <div class="work-img">
+          <img src="https://ekathvafoundation.com/Gallery/BooksDistributionDec2019/111.jpg" alt="Education" loading="lazy">
+          <div class="work-img-overlay"></div>
+          <div class="work-tag-over">📚 Education</div>
+        </div>
+        <div class="work-body">
+          <h3>Education</h3>
+          <p>Books distribution drives, old age home renovations, school stationery collection, and our "School to School" initiative connecting urban resources with rural needs.</p>
+          <div class="work-link">View Photo Gallery <span>→</span></div>
+        </div>
+      </div>
+
+      <div class="work-card rev d3" onclick="window.open('https://ekathvafoundation.com/#Photos','_blank')">
+        <div class="work-img" style="background:linear-gradient(135deg,#FDF0F4,#F9E0EA);display:flex;align-items:center;justify-content:center">
+          <img src="https://ekathvafoundation.com/Gallery/RoadSafetyMarch2019/3.jpg" alt="Women Empowerment" loading="lazy" onerror="this.style.display='none'">
+          <div class="work-img-overlay"></div>
+          <div class="work-tag-over">👩 Empowerment</div>
+        </div>
+        <div class="work-body">
+          <h3>Women Empowerment</h3>
+          <p>Breaking the culture of silence around menstruation, advocating for women's dignity, and connecting women to skill-building and livelihood opportunities across the district.</p>
+          <div class="work-link">View Photo Gallery <span>→</span></div>
+        </div>
+      </div>
+
+      <div class="work-card rev d4" onclick="window.open('https://ekathvafoundation.com/#Photos','_blank')">
+        <div class="work-img">
+          <img src="https://ekathvafoundation.com/Gallery/BlanketsDistNov9th-2019/113.jpg" alt="Disaster Response" loading="lazy">
+          <div class="work-img-overlay"></div>
+          <div class="work-tag-over">🛡 Disaster Response</div>
+        </div>
+        <div class="work-body">
+          <h3>Disaster Response</h3>
+          <p>From blanket distributions in winter, to Kerala flood relief fundraising, to the COVID-19 Health Line coordinating ambulances, blood donors, oxygen and medicine — we move fast.</p>
+          <div class="work-link">View Photo Gallery <span>→</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery">
+  <div class="si">
+    <div class="slabel rev">Gallery</div>
+    <h2 class="stitle rev">Real moments from <em>real impact</em></h2>
+    <p class="ssub rev">Photos and videos from our events across Anantapuramu and beyond.</p>
+
+    <div class="gallery-tabs">
+      <button class="gtab active" onclick="switchTab('photos')">📸 Photo Gallery</button>
+      <button class="gtab" onclick="switchTab('videos')">🎬 Video Gallery</button>
+    </div>
+
+    <!-- PHOTOS -->
+    <div class="gset active photos-grid" id="tab-photos">
+
+      <!-- LiveInGreen 3K Run -->
+      <div class="photo-item rev d1" onclick="openLightbox('https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/10.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/10.jpg" alt="LiveInGreen Run" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">LiveInGreen 3K Run</span></div>
+      </div>
+      <div class="photo-item rev d2" onclick="openLightbox('https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/44.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/44.jpg" alt="Plants Distribution" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Plants Distribution</span></div>
+      </div>
+      <div class="photo-item rev d3" onclick="openLightbox('https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/1.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/1.jpg" alt="3K Run 2018" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">3K Run · Aug 2018</span></div>
+      </div>
+      <div class="photo-item rev d1" onclick="openLightbox('https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/5.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/5.jpg" alt="Green Run" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">LiveInGreen Campaign</span></div>
+      </div>
+
+      <!-- Blankets Distribution -->
+      <div class="photo-item rev d2" onclick="openLightbox('https://ekathvafoundation.com/Gallery/BlanketsDistNov9th-2019/113.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/BlanketsDistNov9th-2019/113.jpg" alt="Blankets Distribution" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Blankets Distribution 2019</span></div>
+      </div>
+      <div class="photo-item rev d3" onclick="openLightbox('https://ekathvafoundation.com/Gallery/BlanketsDistNov9th-2019/111.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/BlanketsDistNov9th-2019/111.jpg" alt="Blankets Nov 2019" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Winter Relief · Nov 2019</span></div>
+      </div>
+
+      <!-- Books Distribution -->
+      <div class="photo-item rev d1" onclick="openLightbox('https://ekathvafoundation.com/Gallery/BooksDistributionDec2019/111.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/BooksDistributionDec2019/111.jpg" alt="Books Distribution" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Books Distribution 2019</span></div>
+      </div>
+      <div class="photo-item rev d2" onclick="openLightbox('https://ekathvafoundation.com/Gallery/BooksDistributionDec2019/112.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/BooksDistributionDec2019/112.jpg" alt="Books Dec 2019" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Education Drive · Dec 2019</span></div>
+      </div>
+
+      <!-- Roof Renovation -->
+      <div class="photo-item rev d3" onclick="openLightbox('https://ekathvafoundation.com/Gallery/RoofRenovationOct2020/112.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/RoofRenovationOct2020/112.jpg" alt="Roof Renovation" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Old Age Home Renovation</span></div>
+      </div>
+      <div class="photo-item rev d1" onclick="openLightbox('https://ekathvafoundation.com/Gallery/RoofRenovationOct2020/113.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/RoofRenovationOct2020/113.jpg" alt="Renovation 2020" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Gandhi Jayanti · Oct 2020</span></div>
+      </div>
+
+      <!-- Kerala Flood -->
+      <div class="photo-item rev d2" onclick="openLightbox('https://ekathvafoundation.com/Gallery/KERALAFLOODREFLIEF2018/111.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/KERALAFLOODREFLIEF2018/111.jpg" alt="Kerala Flood Relief" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Kerala Flood Relief 2018</span></div>
+      </div>
+      <div class="photo-item rev d3" onclick="openLightbox('https://ekathvafoundation.com/Gallery/RoadSafetyMarch2019/1.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/RoadSafetyMarch2019/1.jpg" alt="Road Safety" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Road Safety Awareness 2019</span></div>
+      </div>
+
+    </div>
+
+    <!-- VIDEOS -->
+    <div class="gset videos-grid" id="tab-videos">
+      <div class="video-card rev d1">
+        <div class="video-thumb" onclick="window.open('https://ekathvafoundation.com/#Videos','_blank')">
+          <img src="https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/000.jpg" alt="LiveInGreen Video" loading="lazy" onerror="this.style.background='var(--g)';this.style.display='none'">
+          <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <h4>LiveInGreen 3K Run — Aug 2018</h4>
+          <p>Plantation awareness run with 2500+ participants · Anantapuramu</p>
+        </div>
+      </div>
+      <div class="video-card rev d2">
+        <div class="video-thumb" onclick="window.open('https://ekathvafoundation.com/#Videos','_blank')">
+          <img src="https://ekathvafoundation.com/Gallery/BlanketsDistNov9th-2019/113.jpg" alt="Blankets Video" loading="lazy">
+          <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <h4>Blankets Distribution Drive — Nov 2019</h4>
+          <p>Winter relief distribution to families in need across Anantapuramu</p>
+        </div>
+      </div>
+      <div class="video-card rev d3">
+        <div class="video-thumb" onclick="window.open('https://ekathvafoundation.com/#Videos','_blank')">
+          <img src="https://ekathvafoundation.com/Gallery/RoofRenovationOct2020/112.jpg" alt="Renovation Video" loading="lazy">
+          <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <h4>Old Age Home Renovation — Oct 2020</h4>
+          <p>Gandhi Jayanti special project · Roof renovation for elderly residents</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-more rev">
+      <a href="https://ekathvafoundation.com/#Photos" target="_blank" class="btn btn-s">View Full Gallery on Official Site ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close">✕</button>
+  <img id="lightbox-img" src="" alt="Gallery photo">
+</div>
+
+<!-- ROADMAP / JOURNEY -->
+<section id="roadmap" class="roadmap">
+  <div class="si">
+    <div class="slabel rev">Our Journey</div>
+    <h2 class="stitle rev">A roadmap of <em>purposeful milestones</em></h2>
+    <p class="ssub rev">Every moment on this timeline represents real people helped, real communities strengthened, real lives changed.</p>
+
+    <div class="timeline">
+      <div class="titem rev d1">
+        <div class="tcontent">
+          <div class="tyear">2015</div>
+          <h4>ATP Prayanam Launched</h4>
+          <p>Community carpooling initiative connecting Anantapur ↔ Bangalore travellers through trust-based ride sharing. Still running strong today.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d2">
+        <div class="tcontent">
+          <div class="tyear">2018 · August</div>
+          <h4>LiveInGreen 3K Run</h4>
+          <p>Landmark environmental campaign attracting 2500+ participants. Distributed 2000 plants. Put Anantapuramu on the map for community-led environmental action.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d1">
+        <div class="tcontent">
+          <div class="tyear">2018 · Mid Year</div>
+          <h4>Stand With Kerala</h4>
+          <p>Kerala Flood Relief fundraising — Anantapuramu's community donated funds, dairy products, sanitation materials, biscuits and clothing for flood-hit families.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d2">
+        <div class="tcontent">
+          <div class="tyear">2019 · March</div>
+          <h4>Road Safety Awareness Program</h4>
+          <p>Community-wide road safety education initiative targeting accident-prone zones and school areas across Anantapuramu district.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d1">
+        <div class="tcontent">
+          <div class="tyear">2019 · November</div>
+          <h4>Blankets Distribution Drive</h4>
+          <p>Winter relief — blankets distributed to homeless and vulnerable families across Anantapuramu on November 8th, 2019. Dignity in cold weather.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d2">
+        <div class="tcontent">
+          <div class="tyear">2019 · December</div>
+          <h4>Books Distribution Program</h4>
+          <p>Quality books and stationery provided to underprivileged students on December 2nd, 2019 — bridging the educational gap one classroom at a time.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d1">
+        <div class="tcontent">
+          <div class="tyear">2020 · Registered</div>
+          <h4>Ekathva Foundation Officially Registered</h4>
+          <p>Formally registered with the Government of Andhra Pradesh as Ekathva Foundation Society (Registration No. 66 of 2020). A milestone that enables greater impact.</p>
+        </div>
+        <div class="tdot" style="background:var(--am);box-shadow:0 0 0 3px var(--am)"></div>
+      </div>
+      <div class="titem rev d2">
+        <div class="tcontent">
+          <div class="tyear">2020 · October 2</div>
+          <h4>Old Age Home Roof Renovation</h4>
+          <p>Complete roof renovation of a local old age home on Gandhi Jayanti — ensuring safety, comfort and dignity for elderly residents of Anantapuramu.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d1">
+        <div class="tcontent">
+          <div class="tyear">2020–2021</div>
+          <h4>Ekathva COVID-19 Health Line</h4>
+          <p>24×7 emergency coordination: hospital beds, ambulances, tele-consultations, blood and plasma donors, oxygen cylinders, food and medicine delivery — across Andhra Pradesh at the height of the pandemic.</p>
+        </div>
+        <div class="tdot" style="background:var(--am);box-shadow:0 0 0 3px var(--am)"></div>
+      </div>
+      <div class="titem rev d2">
+        <div class="tcontent">
+          <div class="tyear">2021 – Present</div>
+          <h4>Ongoing Education & Women Empowerment</h4>
+          <p>Continuous programs across education support, menstrual health awareness, women's skill-building, and community leadership development across Anantapuramu.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="timeline-end rev">
+        <div class="tec">🌟 This story is still being written — and you can be part of it.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="impact">
+  <div class="si">
+    <div class="slabel rev" style="color:rgba(255,255,255,0.6)"><span style="background:rgba(255,255,255,0.3);width:20px;height:2px;display:inline-block;border-radius:2px"></span>Our Impact</div>
+    <h2 class="stitle rev" style="color:#fff">Numbers that tell a <em style="color:#FFD580">real story</em></h2>
+    <div class="impact-grid">
+      <div class="icard rev d1"><div class="inum">5000<span>+</span></div><div class="ilbl">Lives Directly Touched</div></div>
+      <div class="icard rev d2"><div class="inum">3000<span>+</span></div><div class="ilbl">Community Donors</div></div>
+      <div class="icard rev d3"><div class="inum">10<span>+</span></div><div class="ilbl">Events & Campaigns</div></div>
+      <div class="icard rev d4"><div class="inum">4</div><div class="ilbl">Core Programs</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GET INVOLVED -->
+<section id="involved" class="involved">
+  <div class="si">
+    <div class="slabel rev">Get Involved</div>
+    <h2 class="stitle rev">Be the change you <em>wish to see</em></h2>
+    <div class="involved-wrap rev" style="margin-top:2.5rem">
+      <div class="involved-text">
+        <div class="slabel">Join Ekathva</div>
+        <h2 class="stitle" style="font-size:clamp(1.7rem,3.5vw,2.3rem)">Your contribution<br><em>changes lives.</em></h2>
+        <p class="ssub" style="margin-top:0.85rem">Every rupee, every hour, every skill you offer — amplifies what we can do together for Anantapuramu and beyond. No contribution is too small.</p>
+        <blockquote>"Volunteers don't necessarily have time, but they have heart. In helping others, you help yourself most of all." — Mahatma Gandhi</blockquote>
+      </div>
+      <div class="inv-options">
+        <button class="inv-opt" onclick="openModal(event,'donateModal')">
+          <div class="inv-opt-icon">❤️</div>
+          <div class="inv-opt-text"><strong>Donate</strong><span>Support our programs financially via UPI or bank transfer</span></div>
+          <span class="inv-arr">→</span>
+        </button>
+        <a href="mailto:ekathvafoundationatp@gmail.com?subject=Volunteer Registration — Ekathva Foundation" class="inv-opt">
+          <div class="inv-opt-icon">🙋</div>
+          <div class="inv-opt-text"><strong>Volunteer</strong><span>Give your time, energy, and skills to the cause</span></div>
+          <span class="inv-arr">→</span>
+        </a>
+        <a href="mailto:ekathvafoundationatp@gmail.com?subject=Sponsorship Enquiry — Ekathva Foundation" class="inv-opt">
+          <div class="inv-opt-icon">🤝</div>
+          <div class="inv-opt-text"><strong>Sponsor a Program</strong><span>Partner with us for lasting, measurable impact</span></div>
+          <span class="inv-arr">→</span>
+        </a>
+        <a href="https://ekathvafoundation.com/#Videos" target="_blank" class="inv-opt">
+          <div class="inv-opt-icon">📣</div>
+          <div class="inv-opt-text"><strong>Spread the Word</strong><span>Share our work — awareness is half the battle</span></div>
+          <span class="inv-arr">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Membership Banner -->
+    <div class="member-banner rev" style="margin-top:2rem">
+      <div>
+        <h4>📋 Membership Registration</h4>
+        <p>Join Ekathva as an official member and be part of the movement. Fill in the registration form on the official site.</p>
+      </div>
+      <a href="https://ekathvafoundation.com/MemberRegistrationPage.aspx" target="_blank" class="mbtn">Register as Member →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="si">
+    <div class="slabel rev">Contact Us</div>
+    <h2 class="stitle rev">We'd love to <em>hear from you</em></h2>
+    <div class="contact-grid">
+      <div class="cinfo">
+        <div class="citem rev d1">
+          <div class="cicon">📧</div>
+          <div class="ctext"><strong>Email</strong><a href="mailto:ekathvafoundationatp@gmail.com">ekathvafoundationatp@gmail.com</a></div>
+        </div>
+        <div class="citem rev d2">
+          <div class="cicon">📞</div>
+          <div class="ctext"><strong>Phone</strong><a href="tel:+918106819536">+91 – 8106819536</a><a href="tel:+917338009486">+91 – 7338009486</a></div>
+        </div>
+        <div class="citem rev d3">
+          <div class="cicon">📍</div>
+          <div class="ctext"><strong>Address</strong><p>D.No. 7-156, Prakash Road,<br>Anantapuramu, Andhra Pradesh — 515001</p></div>
+        </div>
+        <div class="citem rev d4">
+          <div class="cicon">🏛</div>
+          <div class="ctext"><strong>Registration</strong><p>Govt. of Andhra Pradesh<br>Registration No. 66 of 2020</p></div>
+        </div>
+        <div class="citem rev d1">
+          <div class="cicon">🌐</div>
+          <div class="ctext"><strong>Official Website</strong><a href="https://ekathvafoundation.com" target="_blank">ekathvafoundation.com ↗</a></div>
+        </div>
+      </div>
+
+      <div class="cform rev d2">
+        <h3>Send a Message</h3>
+        <p class="fnote">Your message will be sent directly to <strong>ekathvafoundationatp@gmail.com</strong> when you click Send.</p>
+        <div class="fg-row">
+          <div class="fg"><label>Your Name</label><input type="text" id="fname" placeholder="Full name"></div>
+          <div class="fg"><label>Phone (optional)</label><input type="tel" id="fphone" placeholder="+91 XXXXX XXXXX"></div>
+        </div>
+        <div class="fg"><label>Email Address</label><input type="email" id="femail" placeholder="your@email.com"></div>
+        <div class="fg"><label>Subject</label><input type="text" id="fsubject" placeholder="How can we help?"></div>
+        <div class="fg"><label>Message</label><textarea id="fmessage" placeholder="Tell us about your interest in volunteering, donating, or getting involved..."></textarea></div>
+        <button class="fsub" onclick="sendMail()">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="si">
+    <div class="footer-grid">
+      <div class="fbrand">
+        <img src="https://ekathvafoundation.com/Images/logo.png" alt="Ekathva Foundation" onerror="this.style.display='none'">
+        <strong style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fff;display:block">Ekathva Foundation Society</strong>
+        <p>A registered NGO building bridges between communities through compassion, action, and unity across Andhra Pradesh since 2020.</p>
+        <div class="official-note">
+          🌐 This is a tribute site. For official information visit:<br>
+          <a href="https://ekathvafoundation.com" target="_blank">ekathvafoundation.com</a>
+        </div>
+      </div>
+      <div class="fcol">
+        <h4>Organisation</h4>
+        <a href="#about" onclick="smoothTo(event,'#about')">About Us</a>
+        <a href="#about" onclick="smoothTo(event,'#about')">Vision & Mission</a>
+        <a href="#board" onclick="smoothTo(event,'#board')">Board Members</a>
+        <a href="#roadmap" onclick="smoothTo(event,'#roadmap')">Our Journey</a>
+      </div>
+      <div class="fcol">
+        <h4>Programs</h4>
+        <a href="https://ekathvafoundation.com/#Photos" target="_blank">Plantation Awareness</a>
+        <a href="https://ekathvafoundation.com/#Photos" target="_blank">Education</a>
+        <a href="https://ekathvafoundation.com/#Photos" target="_blank">Women Empowerment</a>
+        <a href="https://ekathvafoundation.com/#Photos" target="_blank">Disaster Response</a>
+      </div>
+      <div class="fcol">
+        <h4>Get Involved</h4>
+        <a href="#" onclick="openModal(event,'donateModal')">Donate</a>
+        <a href="mailto:ekathvafoundationatp@gmail.com">Volunteer</a>
+        <a href="https://ekathvafoundation.com/MemberRegistrationPage.aspx" target="_blank">Membership</a>
+        <a href="#contact" onclick="smoothTo(event,'#contact')">Contact Us</a>
+      </div>
+    </div>
+    <div class="fbot">
+      <p>© 2020–2025 Ekathva Foundation Society. All Rights Reserved. Govt. of AP Registration No. 66 of 2020.</p>
+      <div class="fbot-links">
+        <a href="https://ekathvafoundation.com" target="_blank">Official Site ↗</a>
+        <a href="https://ekathvafoundation.com" target="_blank">Privacy Policy</a>
+        <a href="https://ekathvafoundation.com" target="_blank">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- DONATE MODAL -->
+<div class="modal-overlay" id="donateModal" onclick="closeOnOverlay(event,'donateModal')">
+  <div class="modal">
+    <div class="mhead">
+      <button class="mclose" onclick="document.getElementById('donateModal').classList.remove('open');document.body.style.overflow=''">✕</button>
+      <h3>Support Ekathva Foundation</h3>
+      <p>Every rupee goes directly to our programs. Transparent, accountable impact.</p>
+    </div>
+    <div class="mbody">
+      <div class="brow"><span class="bk">Account Name</span><span class="bv">Ekathva Foundation Society</span></div>
+      <div class="brow"><span class="bk">Account Number</span><span class="bv">5020 0056 8511 51</span></div>
+      <div class="brow"><span class="bk">Bank</span><span class="bv">HDFC Bank</span></div>
+      <div class="brow"><span class="bk">Branch</span><span class="bv">Ram Nagar, Anantapuramu</span></div>
+      <div class="brow"><span class="bk">IFSC Code</span><span class="bv">HDFC0004246</span></div>
+      <div class="brow"><span class="bk">Account Type</span><span class="bv">Current Account</span></div>
+      <div class="upi-pill" style="margin-top:1rem">
+        <small>GPay / PhonePe / Any UPI App</small>
+        <p>8106819536@hdfcbank</p>
+      </div>
+      <p style="font-size:0.75rem;color:var(--ts);margin-top:0.85rem;text-align:center">💡 50% tax exemption under Section 80G · Write to us with PAN for receipt</p>
+    </div>
+  </div>
+</div>
+
+<!-- SCROLL TO TOP -->
+<button class="stt" id="stt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24"><polyline points="18,15 12,9 6,15"/></svg>
+</button>
+
+<script>
+// Smooth scroll
+function smoothTo(e,id){
+  e&&e.preventDefault();
+  const el=document.querySelector(id);
+  if(el){const y=el.getBoundingClientRect().top+window.scrollY-80;window.scrollTo({top:y,behavior:'smooth'})}
+}
+
+// Navbar scroll
+const nav=document.getElementById('nav');
+const stt=document.getElementById('stt');
+window.addEventListener('scroll',()=>{
+  const sy=window.scrollY;
+  nav.classList.toggle('scrolled',sy>50);
+  stt.classList.toggle('visible',sy>400);
+});
+
+// Mobile menu
+function toggleMenu(){
+  const h=document.getElementById('hamburger');
+  const m=document.getElementById('mobileMenu');
+  h.classList.toggle('open');
+  m.classList.toggle('open');
+  document.body.style.overflow=m.classList.contains('open')?'hidden':'';
+}
+function closeMenu(){
+  document.getElementById('hamburger').classList.remove('open');
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.body.style.overflow='';
+}
+
+// Modals
+function openModal(e,id){
+  e&&e.preventDefault();
+  document.getElementById(id).classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeOnOverlay(e,id){
+  if(e.target===document.getElementById(id)){
+    document.getElementById(id).classList.remove('open');
+    document.body.style.overflow='';
+  }
+}
+
+// Board modals
+function openBoardModal(key){
+  document.getElementById('modal-'+key).classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeBoardModal(e,id){
+  if(e.target===document.getElementById(id)){
+    document.getElementById(id).classList.remove('open');
+    document.body.style.overflow='';
+  }
+}
+
+// Vision/Mission toggle
+function toggleVM(id){
+  const block=document.getElementById(id);
+  const body=document.getElementById(id+'-body');
+  const isOpen=block.classList.contains('open');
+  block.classList.toggle('open',!isOpen);
+  body.classList.toggle('open',!isOpen);
+}
+
+// Gallery tabs
+function switchTab(tab){
+  document.querySelectorAll('.gtab').forEach((t,i)=>{
+    const tabs=['photos','videos'];
+    t.classList.toggle('active',tabs[i]===tab);
+  });
+  document.getElementById('tab-photos').classList.toggle('active',tab==='photos');
+  document.getElementById('tab-videos').classList.toggle('active',tab==='videos');
+}
+
+// Lightbox
+function openLightbox(src){
+  document.getElementById('lightbox-img').src=src;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow='';
+}
+
+// Contact form → mailto
+function sendMail(){
+  const name=document.getElementById('fname').value.trim();
+  const email=document.getElementById('femail').value.trim();
+  const phone=document.getElementById('fphone').value.trim();
+  const subject=document.getElementById('fsubject').value.trim()||'Message from Ekathva Tribute Site';
+  const msg=document.getElementById('fmessage').value.trim();
+  if(!name||!email||!msg){alert('Please fill in your name, email, and message.');return;}
+  const body=`Name: ${name}\nEmail: ${email}\nPhone: ${phone||'Not provided'}\n\nMessage:\n${msg}`;
+  window.location.href=`mailto:ekathvafoundationatp@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+// Scroll reveal
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}});
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rev').forEach(el=>obs.observe(el));
+
+// Keyboard close for lightbox
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){
+    closeLightbox();
+    document.querySelectorAll('.modal-overlay,.bmodal-overlay').forEach(m=>{
+      m.classList.remove('open');
+      document.body.style.overflow='';
+    });
+  }
+});
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ekathva Foundation — A Tribute | Anantapuramu</title>
+<meta name="description" content="A tribute to Ekathva Foundation Society, Anantapuramu — An NGO changing lives through education, environment, women empowerment and disaster response.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --g:#1B5E35;--gm:#2A7D4F;--gs:#3DA06A;--gp:#E6F4EC;--gl:#F0F9F3;
+  --am:#C97B0A;--aw:#E8941A;--ap:#FEF5E4;
+  --cream:#FAFAF6;--white:#FFFFFF;
+  --td:#162419;--tm:#3D5A47;--ts:#6B8572;
+  --bdr:#D0E8D9;--shd:rgba(27,94,53,0.08);
+  --r:12px;--rl:20px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--td);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;line-height:1.15}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--cream)}
+::-webkit-scrollbar-thumb{background:var(--gs);border-radius:3px}
+::selection{background:var(--gp);color:var(--g)}
+
+/* ── TRIBUTE BANNER ── */
+.tribute-banner{background:linear-gradient(90deg,var(--g),var(--gm),var(--am));color:#fff;text-align:center;padding:0.6rem 1rem;font-size:0.78rem;font-weight:600;letter-spacing:0.04em;position:relative;z-index:200}
+.tribute-banner a{color:#FFD580;text-decoration:underline;margin-left:8px}
+.tribute-banner a:hover{color:#fff}
+
+/* ── NAVBAR ── */
+.nav{position:fixed;top:36px;left:0;right:0;z-index:100;transition:all 0.35s ease}
+.nav.scrolled{top:0;background:rgba(250,250,246,0.97);backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--bdr)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:70px}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.logo-img{height:44px;width:auto;filter:drop-shadow(0 2px 6px rgba(27,94,53,0.2))}
+.logo-text{display:flex;flex-direction:column;line-height:1.1}
+.logo-text strong{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);font-weight:700}
+.logo-text span{font-size:0.62rem;color:var(--ts);letter-spacing:0.1em;text-transform:uppercase;font-weight:600}
+.nav-links{display:flex;align-items:center;gap:0.15rem}
+.nav-links a{padding:0.45rem 0.9rem;font-size:0.86rem;font-weight:600;color:var(--tm);border-radius:8px;transition:all 0.2s}
+.nav-links a:hover{color:var(--g);background:var(--gp)}
+.nav-right{display:flex;align-items:center;gap:0.75rem}
+.nav-official{padding:0.5rem 1rem;border:1.5px solid var(--bdr);color:var(--tm);border-radius:40px;font-size:0.8rem;font-weight:600;transition:all 0.2s}
+.nav-official:hover{border-color:var(--g);color:var(--g)}
+.nav-cta{padding:0.55rem 1.25rem;background:var(--g);color:#fff;border-radius:40px;font-size:0.82rem;font-weight:700;transition:all 0.25s}
+.nav-cta:hover{background:var(--gm);transform:translateY(-1px);box-shadow:0 4px 14px rgba(27,94,53,0.3)}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:8px;border-radius:8px;transition:background 0.2s}
+.hamburger:hover{background:var(--gp)}
+.hamburger span{width:22px;height:2px;background:var(--g);border-radius:2px;transition:all 0.3s;display:block}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;inset:0;top:106px;background:var(--white);z-index:99;padding:1.5rem;flex-direction:column;gap:0.4rem;border-top:1px solid var(--bdr);animation:slideDown 0.3s ease;overflow-y:auto}
+.mobile-menu.open{display:flex}
+.mobile-menu a{padding:0.9rem 1.25rem;font-size:0.95rem;font-weight:600;color:var(--tm);border-radius:10px;transition:all 0.2s}
+.mobile-menu a:hover,.mobile-menu a.active{background:var(--gp);color:var(--g)}
+.mobile-cta-wrap{display:flex;gap:0.75rem;margin-top:0.75rem;flex-direction:column}
+.mobile-menu .mc1{padding:0.9rem;background:var(--g);color:#fff;text-align:center;border-radius:12px;font-weight:700}
+.mobile-menu .mc2{padding:0.9rem;border:1.5px solid var(--g);color:var(--g);text-align:center;border-radius:12px;font-weight:700}
+@keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── HERO ── */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:106px;position:relative;overflow:hidden;background:linear-gradient(160deg,var(--gl) 0%,var(--cream) 50%,var(--ap) 100%)}
+.hero-logo-bg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(70vw,500px);opacity:0.05;pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite}
+@keyframes breathe{0%,100%{opacity:0.04;transform:translate(-50%,-50%) scale(1)}50%{opacity:0.07;transform:translate(-50%,-50%) scale(1.04)}}
+
+/* People in circle SVG animation */
+.circle-anim{position:absolute;right:-40px;top:50%;transform:translateY(-50%);width:min(45vw,460px);opacity:0.12;pointer-events:none;z-index:0}
+.circle-anim svg{animation:rotateSlow 40s linear infinite}
+@keyframes rotateSlow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.orbit-dot{animation:orbitPop 3s ease-in-out infinite}
+
+.hero-inner{max-width:1200px;margin:0 auto;padding:3rem 1.5rem 6rem;display:grid;grid-template-columns:1.1fr 0.9fr;gap:2rem;align-items:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:0.4rem 1.1rem;background:var(--white);border:1px solid var(--bdr);border-radius:40px;font-size:0.72rem;font-weight:700;color:var(--gm);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem;box-shadow:0 2px 8px var(--shd)}
+.hero-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--gs);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(1.5)}}
+.hero-title{font-size:clamp(2.6rem,5vw,4.2rem);color:var(--g);font-weight:700;margin-bottom:1.1rem;letter-spacing:-0.02em;line-height:1.1}
+.hero-title em{font-style:italic;color:var(--am)}
+.hero-sub{font-size:1rem;color:var(--tm);line-height:1.85;margin-bottom:1.75rem;max-width:500px;font-weight:400}
+.hero-actions{display:flex;gap:0.9rem;flex-wrap:wrap;align-items:center;margin-bottom:2.25rem}
+.btn{display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:0.88rem;border-radius:40px;padding:0.8rem 1.75rem;transition:all 0.25s;letter-spacing:0.02em}
+.btn-p{background:var(--g);color:#fff}.btn-p:hover{background:var(--gm);transform:translateY(-2px);box-shadow:0 8px 22px rgba(27,94,53,0.3)}
+.btn-s{border:2px solid var(--g);color:var(--g)}.btn-s:hover{background:var(--gp);transform:translateY(-2px)}
+.btn-off{border:1.5px solid var(--bdr);color:var(--tm)}.btn-off:hover{border-color:var(--g);color:var(--g)}
+.hero-stats{display:flex;gap:2rem;padding-top:1.75rem;border-top:1px solid var(--bdr)}
+.hstat .num{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:var(--g);line-height:1}
+.hstat .lbl{font-size:0.7rem;color:var(--ts);font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-top:3px}
+.hero-right{display:flex;justify-content:center;align-items:center}
+
+/* People in circle - right side large */
+.circle-hero{width:min(90%,380px);margin:0 auto}
+
+/* ── SECTION BASE ── */
+section{padding:5.5rem 0}
+.si{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.slabel{display:inline-flex;align-items:center;gap:8px;font-size:0.7rem;font-weight:700;color:var(--gm);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.75rem}
+.slabel::before{content:'';width:20px;height:2px;background:var(--gs);border-radius:2px}
+.stitle{font-size:clamp(1.9rem,4vw,2.8rem);color:var(--g);margin-bottom:0.9rem;font-weight:700;line-height:1.1}
+.stitle em{font-style:italic;color:var(--am)}
+.ssub{font-size:0.975rem;color:var(--tm);max-width:560px;line-height:1.85}
+
+/* ── ABOUT ── */
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-top:3rem}
+.about-text p{font-size:0.965rem;color:var(--tm);line-height:1.9;margin-bottom:0.9rem}
+.about-text strong{color:var(--g);font-weight:700}
+.about-actions{display:flex;gap:0.85rem;flex-wrap:wrap;margin-top:1.75rem}
+
+/* Vision/Mission accordion */
+.vm-block{margin-top:1.25rem;border:1.5px solid var(--bdr);border-radius:var(--r);overflow:hidden}
+.vm-header{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.35rem;cursor:pointer;transition:background 0.2s;user-select:none}
+.vm-header:hover{background:var(--gl)}
+.vm-header h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);font-weight:600;display:flex;align-items:center;gap:10px}
+.vm-chevron{width:22px;height:22px;border-radius:50%;background:var(--gp);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform 0.35s}
+.vm-chevron svg{width:11px;height:11px;stroke:var(--g);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.vm-block.open .vm-chevron{transform:rotate(180deg);background:var(--g)}
+.vm-block.open .vm-chevron svg{stroke:#fff}
+.vm-body{max-height:0;overflow:hidden;transition:max-height 0.45s cubic-bezier(0.4,0,0.2,1),padding 0.35s}
+.vm-body.open{max-height:400px}
+.vm-body-inner{padding:0 1.35rem 1.35rem;font-size:0.92rem;color:var(--tm);line-height:1.85;border-top:1px solid var(--bdr)}
+.vm-body-inner p{padding-top:1rem}
+
+/* Legal card */
+.legal-card{background:var(--gl);border:1.5px solid var(--bdr);border-radius:var(--rl);padding:1.75rem;position:relative;overflow:hidden}
+.legal-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--gs)}
+.legal-row{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;padding:0.6rem 0;border-bottom:1px solid var(--bdr);font-size:0.875rem}
+.legal-row:last-child{border:none}
+.legal-row .lk{color:var(--ts);font-weight:600;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.06em;flex-shrink:0}
+.legal-row .lv{color:var(--td);font-weight:600;text-align:right}
+.upi-pill{background:var(--gp);border:1px solid var(--gs);border-radius:8px;padding:0.6rem 1rem;text-align:center;margin-top:0.75rem}
+.upi-pill p{color:var(--g);font-weight:700;font-size:0.95rem}
+.upi-pill small{color:var(--gm);font-size:0.72rem;font-weight:600}
+
+/* ── BOARD ── */
+.board{background:var(--gl)}
+.board-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;margin-top:2.75rem}
+.board-card{background:var(--white);border-radius:var(--rl);overflow:hidden;border:1px solid var(--bdr);transition:all 0.35s;cursor:pointer;position:relative}
+.board-card:hover{box-shadow:0 12px 40px var(--shd);transform:translateY(-6px);border-color:var(--gs)}
+.board-photo{height:200px;background:linear-gradient(135deg,var(--gp),var(--gl));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.board-initial{font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:700;color:var(--g);opacity:0.25;line-height:1;user-select:none}
+.board-name-overlay{position:absolute;bottom:0;left:0;right:0;padding:1rem;background:linear-gradient(transparent,rgba(27,94,53,0.6));color:#fff;text-align:center}
+.board-name-overlay h4{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:700}
+.board-name-overlay span{font-size:0.72rem;opacity:0.9;letter-spacing:0.05em;font-weight:600}
+.board-body{padding:1.25rem}
+.board-quote{font-size:0.85rem;color:var(--tm);line-height:1.75;font-style:italic;border-left:3px solid var(--gs);padding-left:0.85rem;margin-bottom:1rem}
+.board-socials{display:flex;gap:0.5rem;flex-wrap:wrap}
+.social-btn{padding:0.3rem 0.7rem;border-radius:6px;font-size:0.7rem;font-weight:700;letter-spacing:0.04em;transition:all 0.2s;border:1px solid}
+.social-btn.li{border-color:#0077B5;color:#0077B5}.social-btn.li:hover{background:#0077B5;color:#fff}
+.social-btn.tw{border-color:#1DA1F2;color:#1DA1F2}.social-btn.tw:hover{background:#1DA1F2;color:#fff}
+.social-btn.fb{border-color:#1877F2;color:#1877F2}.social-btn.fb:hover{background:#1877F2;color:#fff}
+.social-btn.ig{border-color:#E4405F;color:#E4405F}.social-btn.ig:hover{background:#E4405F;color:#fff}
+
+/* Board modal */
+.bmodal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:300;display:none;align-items:center;justify-content:center;padding:1.5rem;backdrop-filter:blur(6px)}
+.bmodal-overlay.open{display:flex}
+.bmodal{background:var(--white);border-radius:var(--rl);max-width:500px;width:100%;position:relative;overflow:hidden;animation:modalIn 0.4s cubic-bezier(0.34,1.56,0.64,1)}
+@keyframes modalIn{from{opacity:0;transform:scale(0.85) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.bmodal-header{height:180px;background:linear-gradient(135deg,var(--g),var(--gm));display:flex;align-items:center;justify-content:center;position:relative}
+.bmodal-initial{font-family:'Cormorant Garamond',serif;font-size:7rem;font-weight:700;color:rgba(255,255,255,0.15);line-height:1;user-select:none}
+.bmodal-name{position:absolute;bottom:1.25rem;left:1.5rem;color:#fff}
+.bmodal-name h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700}
+.bmodal-name span{font-size:0.78rem;opacity:0.8;font-weight:600;letter-spacing:0.06em}
+.bmodal-close{position:absolute;top:1rem;right:1rem;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;cursor:pointer;transition:background 0.2s}
+.bmodal-close:hover{background:rgba(255,255,255,0.3)}
+.bmodal-body{padding:1.75rem}
+.bmodal-body p{font-size:0.9rem;color:var(--tm);line-height:1.85;margin-bottom:1.25rem}
+.bmodal-body blockquote{border-left:3px solid var(--gs);padding-left:1rem;color:var(--gm);font-style:italic;font-size:0.92rem;line-height:1.75;margin-bottom:1.25rem}
+.bmodal-socials{display:flex;gap:0.6rem;flex-wrap:wrap}
+
+/* Community strip */
+.community-strip{background:var(--g);color:#fff;padding:3.5rem 0;text-align:center}
+.community-strip h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:0.6rem;font-weight:700}
+.community-strip p{color:rgba(255,255,255,0.7);font-size:0.95rem;max-width:520px;margin:0 auto 1.75rem}
+.donor-grid{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;margin-top:1.5rem}
+.dstat .dnum{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:700;color:#fff;line-height:1}
+.dstat .dnum span{color:#FFD580}
+.dstat .dlbl{font-size:0.72rem;color:rgba(255,255,255,0.6);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-top:4px}
+
+/* ── WORK ── */
+.work{background:var(--white)}
+.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2.75rem}
+.work-card{border-radius:var(--rl);overflow:hidden;border:1px solid var(--bdr);transition:all 0.35s;cursor:pointer;position:relative;background:var(--cream)}
+.work-card:hover{box-shadow:0 12px 40px var(--shd);transform:translateY(-5px);border-color:var(--gs)}
+.work-img{height:180px;overflow:hidden;position:relative}
+.work-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.55s ease}
+.work-card:hover .work-img img{transform:scale(1.07)}
+.work-img-overlay{position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(27,94,53,0.5))}
+.work-tag-over{position:absolute;top:12px;left:12px;padding:0.25rem 0.7rem;border-radius:40px;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;background:rgba(255,255,255,0.9);color:var(--g)}
+.work-body{padding:1.35rem}
+.work-body h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--g);margin-bottom:0.5rem;font-weight:600}
+.work-body p{font-size:0.85rem;color:var(--tm);line-height:1.75}
+.work-link{display:inline-flex;align-items:center;gap:5px;margin-top:0.85rem;font-size:0.8rem;font-weight:700;color:var(--gm);transition:gap 0.2s}
+.work-card:hover .work-link{gap:10px;color:var(--g)}
+
+/* ── GALLERY ── */
+.gallery{background:var(--gl)}
+.gallery-tabs{display:flex;gap:0.5rem;flex-wrap:wrap;margin:2rem 0 1.75rem}
+.gtab{padding:0.55rem 1.2rem;border-radius:40px;font-size:0.82rem;font-weight:600;color:var(--tm);border:1.5px solid var(--bdr);background:var(--white);transition:all 0.2s;cursor:pointer}
+.gtab.active,.gtab:hover{background:var(--g);color:#fff;border-color:var(--g)}
+.gset{display:none}.gset.active{display:grid}
+.photos-grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:0.85rem}
+.photo-item{border-radius:var(--r);overflow:hidden;aspect-ratio:1;position:relative;cursor:pointer;border:1px solid var(--bdr)}
+.photo-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.45s}
+.photo-item:hover img{transform:scale(1.08)}
+.photo-item-overlay{position:absolute;inset:0;background:rgba(27,94,53,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem}
+.photo-item:hover .photo-item-overlay{background:rgba(27,94,53,0.4)}
+.photo-item-label{color:#fff;font-size:0.72rem;font-weight:700;opacity:0;transition:opacity 0.3s;text-shadow:0 1px 4px rgba(0,0,0,0.4)}
+.photo-item:hover .photo-item-label{opacity:1}
+
+/* Videos */
+.videos-grid{grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
+.video-card{background:var(--white);border-radius:var(--rl);overflow:hidden;border:1px solid var(--bdr);transition:all 0.3s}
+.video-card:hover{box-shadow:0 8px 28px var(--shd);transform:translateY(-4px)}
+.video-thumb{position:relative;height:160px;overflow:hidden;background:var(--g);cursor:pointer}
+.video-thumb img{width:100%;height:100%;object-fit:cover;opacity:0.8}
+.play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:52px;height:52px;background:rgba(255,255,255,0.92);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform 0.25s,background 0.25s}
+.video-thumb:hover .play-btn{transform:translate(-50%,-50%) scale(1.12);background:#fff}
+.play-btn svg{width:20px;height:20px;fill:var(--g);margin-left:3px}
+.video-info{padding:1rem 1.1rem}
+.video-info h4{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--g);margin-bottom:0.35rem;font-weight:600}
+.video-info p{font-size:0.78rem;color:var(--ts)}
+.gallery-more{text-align:center;margin-top:2.25rem}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.9);z-index:400;display:none;align-items:center;justify-content:center;padding:2rem}
+.lightbox.open{display:flex}
+.lightbox img{max-width:90vw;max-height:85vh;border-radius:8px;object-fit:contain}
+.lightbox-close{position:absolute;top:1.5rem;right:1.5rem;width:40px;height:40px;background:rgba(255,255,255,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.3rem;cursor:pointer;transition:background 0.2s}
+.lightbox-close:hover{background:rgba(255,255,255,0.3)}
+
+/* ── ROADMAP ── */
+.roadmap{background:var(--white)}
+.timeline{position:relative;margin-top:3rem;padding-bottom:2rem}
+.timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gs),var(--gp));transform:translateX(-50%)}
+.titem{display:flex;margin-bottom:2.25rem;position:relative}
+.titem:nth-child(odd){flex-direction:row-reverse}
+.titem:nth-child(odd) .tcontent{text-align:right;margin-right:3rem;margin-left:0}
+.titem:nth-child(even) .tcontent{margin-left:3rem}
+.tcontent{width:calc(50% - 3.5rem);background:var(--white);border:1.5px solid var(--bdr);border-radius:var(--rl);padding:1.25rem 1.5rem;transition:all 0.3s;position:relative}
+.tcontent:hover{border-color:var(--gs);box-shadow:0 6px 24px var(--shd);transform:translateY(-3px)}
+.tyear{display:inline-block;background:var(--g);color:#fff;font-size:0.7rem;font-weight:700;letter-spacing:0.08em;padding:0.2rem 0.65rem;border-radius:40px;margin-bottom:0.6rem}
+.tcontent h4{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--g);margin-bottom:0.4rem;font-weight:600}
+.tcontent p{font-size:0.82rem;color:var(--tm);line-height:1.7}
+.tdot{position:absolute;left:50%;top:1.5rem;transform:translateX(-50%);width:18px;height:18px;background:var(--gs);border:3px solid var(--white);border-radius:50%;box-shadow:0 0 0 3px var(--gs);z-index:1}
+.timeline-end{text-align:center;padding-top:1rem;position:relative;z-index:1}
+.timeline-end .tec{display:inline-flex;align-items:center;gap:8px;padding:0.65rem 1.5rem;background:var(--g);color:#fff;border-radius:40px;font-size:0.82rem;font-weight:700}
+.timeline-end .tec::before{content:'';width:8px;height:8px;background:#FFD580;border-radius:50%;animation:pulse 1.5s infinite}
+
+/* ── IMPACT ── */
+.impact{background:var(--g);color:#fff}
+.impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.75rem;margin-top:2.75rem}
+.icard{text-align:center;padding:2rem 1rem;border-radius:var(--rl);background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);transition:all 0.3s}
+.icard:hover{background:rgba(255,255,255,0.12);transform:translateY(-5px)}
+.inum{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;line-height:1;margin-bottom:0.4rem}
+.inum span{color:#FFD580}
+.ilbl{font-size:0.75rem;color:rgba(255,255,255,0.65);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;line-height:1.5}
+
+/* ── GET INVOLVED ── */
+.involved{background:var(--gl)}
+.involved-wrap{background:linear-gradient(135deg,var(--g) 0%,var(--gm) 100%);border-radius:28px;padding:4rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;position:relative;overflow:hidden;margin-top:0}
+.involved-wrap::before{content:'';position:absolute;top:-80px;right:-80px;width:300px;height:300px;background:rgba(255,255,255,0.04);border-radius:50%}
+.involved-text .slabel{color:rgba(255,255,255,0.6)}.involved-text .slabel::before{background:rgba(255,255,255,0.4)}
+.involved-text .stitle{color:#fff}.involved-text .ssub{color:rgba(255,255,255,0.7);max-width:none}
+.involved-text blockquote{margin-top:1.25rem;border-left:3px solid rgba(255,255,255,0.3);padding-left:1rem;color:rgba(255,255,255,0.55);font-style:italic;font-size:0.85rem;line-height:1.75}
+.inv-options{display:flex;flex-direction:column;gap:0.9rem;position:relative;z-index:1}
+.inv-opt{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);border-radius:14px;padding:1.1rem 1.35rem;display:flex;align-items:center;gap:1rem;transition:all 0.25s;cursor:pointer;text-align:left;color:#fff}
+.inv-opt:hover{background:rgba(255,255,255,0.18);transform:translateX(6px)}
+.inv-opt-icon{font-size:1.3rem;width:40px;flex-shrink:0;text-align:center}
+.inv-opt-text strong{display:block;font-weight:700;font-size:0.9rem;margin-bottom:2px}
+.inv-opt-text span{color:rgba(255,255,255,0.62);font-size:0.78rem}
+.inv-arr{margin-left:auto;color:rgba(255,255,255,0.4);font-size:1.1rem;transition:transform 0.2s}
+.inv-opt:hover .inv-arr{transform:translateX(5px);color:rgba(255,255,255,0.85)}
+
+/* Membership banner */
+.member-banner{background:var(--ap);border:1.5px solid rgba(201,123,10,0.25);border-radius:var(--rl);padding:1.75rem 2rem;margin-top:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.member-banner h4{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:#7A4E0A;font-weight:600;margin-bottom:0.3rem}
+.member-banner p{font-size:0.82rem;color:#9A6A1A}
+.member-banner .mbtn{padding:0.7rem 1.5rem;background:var(--am);color:#fff;border-radius:40px;font-weight:700;font-size:0.85rem;transition:all 0.2s;flex-shrink:0}
+.member-banner .mbtn:hover{background:var(--aw);transform:translateY(-2px);box-shadow:0 6px 18px rgba(201,123,10,0.3)}
+
+/* ── CONTACT ── */
+.contact{background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2.75rem;align-items:start}
+.cinfo{display:flex;flex-direction:column;gap:1.35rem}
+.citem{display:flex;align-items:flex-start;gap:1rem}
+.cicon{width:44px;height:44px;background:var(--gp);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cicon img{width:24px;height:24px;object-fit:contain}
+.ctext strong{display:block;color:var(--g);font-weight:700;font-size:0.83rem;margin-bottom:3px;letter-spacing:0.03em;text-transform:uppercase}
+.ctext a,.ctext p{color:var(--tm);font-size:0.9rem;line-height:1.65;display:block}
+.ctext a:hover{color:var(--g)}
+.cform{background:var(--cream);border-radius:var(--rl);padding:2rem;border:1.5px solid var(--bdr)}
+.cform h3{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--g);margin-bottom:0.4rem;font-weight:600}
+.cform p.fnote{font-size:0.78rem;color:var(--ts);margin-bottom:1.5rem}
+.cform p.fnote strong{color:var(--gm)}
+.fg{margin-bottom:1.1rem}
+.fg label{display:block;font-size:0.8rem;font-weight:700;color:var(--tm);margin-bottom:0.4rem;letter-spacing:0.03em}
+.fg input,.fg textarea{width:100%;padding:0.7rem 1rem;border:1.5px solid var(--bdr);border-radius:10px;font-family:'Nunito',sans-serif;font-size:0.88rem;color:var(--td);background:var(--white);transition:border-color 0.2s;outline:none}
+.fg input:focus,.fg textarea:focus{border-color:var(--gs)}
+.fg textarea{min-height:100px;resize:vertical}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:0.85rem}
+.fsub{width:100%;padding:0.85rem;background:var(--g);color:#fff;border-radius:10px;font-weight:700;font-size:0.88rem;transition:all 0.25s;font-family:'Nunito',sans-serif}
+.fsub:hover{background:var(--gm);box-shadow:0 6px 18px rgba(27,94,53,0.3);transform:translateY(-1px)}
+
+/* ── FOOTER ── */
+footer{background:var(--td);color:#fff;padding:3.5rem 0 1.5rem}
+.footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.75rem}
+.fbrand img{height:44px;width:auto;filter:brightness(10);margin-bottom:1rem}
+.fbrand p{font-size:0.83rem;color:rgba(255,255,255,0.45);line-height:1.8;max-width:240px;margin-top:0.75rem}
+.official-note{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:0.85rem 1rem;margin-top:1rem;font-size:0.78rem;color:rgba(255,255,255,0.55)}
+.official-note a{color:#FFD580;font-weight:700}
+.fcol h4{font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:1.1rem}
+.fcol a{display:block;font-size:0.85rem;color:rgba(255,255,255,0.55);margin-bottom:0.55rem;transition:color 0.2s}
+.fcol a:hover{color:#fff}
+.fbot{padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.07);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.85rem}
+.fbot p{font-size:0.77rem;color:rgba(255,255,255,0.3)}
+.fbot a{font-size:0.77rem;color:rgba(255,255,255,0.3);transition:color 0.2s}.fbot a:hover{color:rgba(255,255,255,0.7)}
+.fbot-links{display:flex;gap:1.25rem}
+
+/* ── SCROLL TO TOP ── */
+.stt{position:fixed;bottom:2rem;right:1.75rem;width:46px;height:46px;background:var(--g);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(27,94,53,0.35);cursor:pointer;z-index:90;opacity:0;transform:translateY(16px);transition:all 0.35s;border:none}
+.stt.visible{opacity:1;transform:translateY(0)}
+.stt:hover{background:var(--gm);transform:translateY(-3px)}
+.stt svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+
+/* ── MODALS ── */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:200;display:none;align-items:center;justify-content:center;padding:1.5rem;backdrop-filter:blur(5px)}
+.modal-overlay.open{display:flex}
+.modal{background:var(--white);border-radius:var(--rl);max-width:440px;width:100%;position:relative;overflow:hidden;animation:modalIn 0.38s cubic-bezier(0.34,1.56,0.64,1)}
+.mhead{background:linear-gradient(135deg,var(--g),var(--gm));padding:1.75rem 1.75rem 1.5rem;color:#fff}
+.mhead h3{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:700;margin-bottom:0.25rem}
+.mhead p{font-size:0.82rem;opacity:0.75}
+.mbody{padding:1.5rem 1.75rem}
+.mclose{position:absolute;top:1rem;right:1rem;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;cursor:pointer;transition:background 0.2s}
+.mclose:hover{background:rgba(255,255,255,0.35)}
+.brow{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;padding:0.65rem 0;border-bottom:1px solid var(--bdr);font-size:0.875rem}
+.brow:last-child{border:none}
+.brow .bk{color:var(--ts);font-weight:600;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.05em;flex-shrink:0}
+.brow .bv{color:var(--td);font-weight:700;text-align:right}
+
+/* ── SCROLL REVEAL ── */
+.rev{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.rev.in{opacity:1;transform:translateY(0)}
+.rev.d1{transition-delay:0.1s}.rev.d2{transition-delay:0.2s}.rev.d3{transition-delay:0.3s}.rev.d4{transition-delay:0.4s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .board-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:900px){
+  .nav-links,.nav-right{display:none}
+  .hamburger{display:flex}
+  .nav{top:36px}.nav.scrolled{top:0}
+  .mobile-menu{top:calc(36px + 70px)}
+  .nav.scrolled ~ .mobile-menu{top:70px}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .about-grid,.contact-grid,.involved-wrap{grid-template-columns:1fr}
+  .involved-wrap{padding:2.5rem 2rem}
+  .work-grid{grid-template-columns:1fr}
+  .impact-grid{grid-template-columns:1fr 1fr}
+  .timeline::before{left:24px;transform:none}
+  .titem,.titem:nth-child(odd){flex-direction:row}
+  .titem:nth-child(odd) .tcontent{text-align:left;margin-right:0;margin-left:3rem}
+  .titem .tcontent,.titem:nth-child(odd) .tcontent{width:calc(100% - 3.5rem);margin-left:3.5rem}
+  .tdot{left:24px;transform:none}
+}
+@media(max-width:640px){
+  .tribute-banner{font-size:0.68rem;line-height:1.6}
+  .board-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .impact-grid{grid-template-columns:1fr 1fr}
+  .hero-stats{gap:1.25rem}
+  .hstat .num{font-size:1.5rem}
+  .involved-wrap{padding:2rem 1.5rem}
+  .member-banner{flex-direction:column}
+  .fg-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- TRIBUTE BANNER -->
+<div class="tribute-banner">
+  ✨ This is a tribute website — built with gratitude for Ekathva Foundation's incredible work.
+  <a href="https://ekathvafoundation.com" target="_blank" rel="noopener">Visit Official Site →</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" onclick="smoothTo(event,'#home')">
+      <img src="https://ekathvafoundation.com/Images/logo.png" alt="Ekathva Foundation Logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="logo-text" style="display:flex">
+        <strong>Ekathva Foundation</strong>
+        <span>Anantapuramu · Est. 2020</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#about" onclick="smoothTo(event,'#about')">About</a>
+      <a href="#work" onclick="smoothTo(event,'#work')">Our Work</a>
+      <a href="#gallery" onclick="smoothTo(event,'#gallery')">Gallery</a>
+      <a href="#roadmap" onclick="smoothTo(event,'#roadmap')">Journey</a>
+      <a href="#involved" onclick="smoothTo(event,'#involved')">Get Involved</a>
+      <a href="#contact" onclick="smoothTo(event,'#contact')">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://ekathvafoundation.com" target="_blank" class="btn nav-official">Official Site ↗</a>
+      <a href="#" class="btn nav-cta" onclick="openModal(event,'donateModal')">Donate Now</a>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="smoothTo(event,'#about');closeMenu()">About Us</a>
+  <a href="#work" onclick="smoothTo(event,'#work');closeMenu()">Our Work</a>
+  <a href="#gallery" onclick="smoothTo(event,'#gallery');closeMenu()">Gallery</a>
+  <a href="#roadmap" onclick="smoothTo(event,'#roadmap');closeMenu()">Our Journey</a>
+  <a href="#board" onclick="smoothTo(event,'#board');closeMenu()">Board Members</a>
+  <a href="#involved" onclick="smoothTo(event,'#involved');closeMenu()">Get Involved</a>
+  <a href="#contact" onclick="smoothTo(event,'#contact');closeMenu()">Contact</a>
+  <div class="mobile-cta-wrap">
+    <a href="#" class="mc1" onclick="openModal(event,'donateModal');closeMenu()">❤️ Donate Now</a>
+    <a href="https://ekathvafoundation.com" target="_blank" class="mc2">Visit Official Site ↗</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <!-- Big transparent logo bg -->
+  <img src="https://ekathvafoundation.com/Images/logo.png" alt="" class="hero-logo-bg" aria-hidden="true">
+
+  <!-- People in circle SVG (decorative) -->
+  <div class="circle-anim" aria-hidden="true">
+    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <!-- Outer circle path -->
+      <circle cx="200" cy="200" r="160" stroke="#1B5E35" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.5"/>
+      <!-- Inner circle -->
+      <circle cx="200" cy="200" r="110" stroke="#3DA06A" stroke-width="1" stroke-dasharray="4 8" opacity="0.4"/>
+      <!-- People figures arranged in circle (8 people) -->
+      <g opacity="0.85">
+        <!-- Person 1 - top -->
+        <g transform="translate(200,60)">
+          <circle cy="-14" r="9" fill="#1B5E35"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#1B5E35" stroke-width="3" stroke-linecap="round"/>
+          <!-- Arms reaching out -->
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#2A7D4F" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 2 - top-right -->
+        <g transform="translate(313,87) rotate(45)">
+          <circle cy="-14" r="9" fill="#2A7D4F"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#2A7D4F" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#3DA06A" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 3 - right -->
+        <g transform="translate(360,200) rotate(90)">
+          <circle cy="-14" r="9" fill="#3DA06A"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#3DA06A" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#1B5E35" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 4 - bottom-right -->
+        <g transform="translate(313,313) rotate(135)">
+          <circle cy="-14" r="9" fill="#C97B0A"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#C97B0A" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#E8941A" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 5 - bottom -->
+        <g transform="translate(200,340) rotate(180)">
+          <circle cy="-14" r="9" fill="#1B5E35"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#1B5E35" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#2A7D4F" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 6 - bottom-left -->
+        <g transform="translate(87,313) rotate(225)">
+          <circle cy="-14" r="9" fill="#2A7D4F"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#2A7D4F" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#3DA06A" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 7 - left -->
+        <g transform="translate(40,200) rotate(270)">
+          <circle cy="-14" r="9" fill="#C97B0A"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#C97B0A" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#E8941A" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Person 8 - top-left -->
+        <g transform="translate(87,87) rotate(315)">
+          <circle cy="-14" r="9" fill="#3DA06A"/>
+          <path d="M0,0 Q-12,18 -16,36 M0,0 Q12,18 16,36 M-16,36 Q-8,50 0,60 M16,36 Q8,50 0,60" stroke="#3DA06A" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-16,20 Q-28,16 -36,22 M16,20 Q28,16 36,22" stroke="#1B5E35" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+      </g>
+      <!-- Center logo/heart -->
+      <g transform="translate(200,200)">
+        <circle r="36" fill="#1B5E35" opacity="0.12"/>
+        <text text-anchor="middle" dominant-baseline="central" font-size="28" fill="#1B5E35" opacity="0.5" font-family="serif">ఏ</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge rev">Registered NGO · AP Govt No. 66 of 2020</div>
+      <h1 class="hero-title rev d1">
+        Building a Better<br>Society, <em>One Life<br>at a Time.</em>
+      </h1>
+      <p class="hero-sub rev d2">Ekathva Foundation Society — rooted in Anantapuramu, driven by compassion. Uniting communities through education, environmental action, women's empowerment, and disaster response since 2020.</p>
+      <div class="hero-actions rev d3">
+        <a href="#work" class="btn btn-p" onclick="smoothTo(event,'#work')">Explore Our Work →</a>
+        <a href="#" class="btn btn-s" onclick="openModal(event,'donateModal')">Support the Cause</a>
+        <a href="https://ekathvafoundation.com" target="_blank" class="btn btn-off">Official Site ↗</a>
+      </div>
+      <div class="hero-stats rev d4">
+        <div class="hstat"><div class="num">2020</div><div class="lbl">Founded</div></div>
+        <div class="hstat"><div class="num">5000+</div><div class="lbl">Lives Touched</div></div>
+        <div class="hstat"><div class="num">3000+</div><div class="lbl">Community Members</div></div>
+        <div class="hstat"><div class="num">AP 66</div><div class="lbl">Registered</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <!-- Tribute note card -->
+      <div style="background:var(--white);border-radius:var(--rl);padding:2rem;border:1.5px solid var(--bdr);box-shadow:0 8px 32px var(--shd);max-width:340px;text-align:center;animation:cardFloat 6s ease-in-out infinite">
+        <img src="https://ekathvafoundation.com/Images/logo.png" alt="Ekathva Logo" style="height:60px;margin:0 auto 1rem;filter:drop-shadow(0 4px 8px rgba(27,94,53,0.2))" onerror="this.style.display='none'">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);margin-bottom:0.6rem;font-weight:600">A Tribute Built with Gratitude</h3>
+        <p style="font-size:0.82rem;color:var(--ts);line-height:1.75;margin-bottom:1rem">This site was created by someone whose life was changed by Ekathva Foundation — as a small thank you to the people who made a difference.</p>
+        <a href="https://ekathvafoundation.com" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:0.78rem;font-weight:700;color:var(--gm);border-bottom:1px solid var(--gs)">Official Website ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="si">
+    <div class="slabel rev">About Us</div>
+    <h2 class="stitle rev">More than an NGO —<br>a <em>movement</em> of unity.</h2>
+    <div class="about-grid">
+      <div class="about-text rev d1">
+        <p>Ekathva Foundation Society was established in <strong>2020</strong> under the Government of Andhra Pradesh (Registration No. 66 of 2020). Based in Anantapuramu, we work tirelessly to uplift underserved communities across the region.</p>
+        <p>The word <strong>"Ekathva"</strong> means <em>oneness</em> — and that spirit drives every program we run. We believe that when communities stand together as one, no challenge is too great.</p>
+        <p>From distributing blankets in winter cold, to running the landmark <strong>LiveInGreen 3K environmental campaign</strong>, to coordinating COVID-19 emergency resources 24×7 — we show up wherever we are needed, always.</p>
+        <p>Our work is built on <strong>transparency, compassion, and long-term impact</strong> — not one-time charity, but sustained, systemic change alongside the people we serve.</p>
+
+        <!-- Vision accordion -->
+        <div class="vm-block rev d2" id="vmv">
+          <div class="vm-header" onclick="toggleVM('vmv')">
+            <h3><span>👁</span> Our Vision</h3>
+            <div class="vm-chevron"><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></div>
+          </div>
+          <div class="vm-body" id="vmv-body">
+            <div class="vm-body-inner">
+              <p>We envision a world where every individual — regardless of caste, gender, or economic standing — has equal access to opportunity, dignity, and a sustainable future. A society bound not by our differences, but by our shared humanity and collective strength.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission accordion -->
+        <div class="vm-block rev d3" id="vmm" style="margin-top:0.75rem">
+          <div class="vm-header" onclick="toggleVM('vmm')">
+            <h3><span>🎯</span> Our Mission</h3>
+            <div class="vm-chevron"><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></div>
+          </div>
+          <div class="vm-body" id="vmm-body">
+            <div class="vm-body-inner">
+              <p>To design and implement community-led programs across plantation awareness, quality education, women's empowerment, and disaster preparedness — creating self-reliant communities capable of driving their own sustainable growth and determining their own futures.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-actions rev d4">
+          <a href="#work" class="btn btn-p" onclick="smoothTo(event,'#work')">See Our Programs →</a>
+          <a href="https://ekathvafoundation.com" target="_blank" class="btn btn-off">Official Site ↗</a>
+        </div>
+      </div>
+
+      <div class="rev d2">
+        <div class="legal-card">
+          <div class="slabel" style="margin-bottom:1rem">Legal Identity</div>
+          <div class="legal-row"><span class="lk">Organisation</span><span class="lv">Ekathva Foundation Society</span></div>
+          <div class="legal-row"><span class="lk">Registered Under</span><span class="lv">Govt. of Andhra Pradesh</span></div>
+          <div class="legal-row"><span class="lk">Registration No.</span><span class="lv">66 of 2020</span></div>
+          <div class="legal-row"><span class="lk">Bank</span><span class="lv">HDFC Bank, Ram Nagar Branch</span></div>
+          <div class="legal-row"><span class="lk">Account No.</span><span class="lv">5020 0056 8511 51</span></div>
+          <div class="legal-row"><span class="lk">IFSC Code</span><span class="lv">HDFC0004246</span></div>
+          <div class="legal-row"><span class="lk">Account Type</span><span class="lv">Current Account</span></div>
+          <div class="legal-row"><span class="lk">Address</span><span class="lv">D.No. 7-156, Prakash Road,<br>Anantapuramu, AP — 515001</span></div>
+          <div class="upi-pill">
+            <small>Google Pay / PhonePe / Any UPI App</small>
+            <p>8106819536@hdfcbank</p>
+          </div>
+          <div style="margin-top:1rem;background:var(--ap);border-radius:8px;padding:0.75rem 1rem;font-size:0.78rem;color:#7A4E0A;line-height:1.6">
+            💡 <strong>Tax Benefit:</strong> Donations are eligible for 50% tax exemption under Section 80G of the Indian Income Tax Act.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOARD MEMBERS -->
+<section id="board" class="board">
+  <div class="si">
+    <div class="slabel rev">Leadership</div>
+    <h2 class="stitle rev">The people <em>behind the mission</em></h2>
+    <p class="ssub rev">Three individuals whose dedication and selfless service have built Ekathva from the ground up — and thousands who stand with them.</p>
+    <div class="board-grid" style="margin-top:2.5rem">
+
+      <!-- Jeevan Sagar -->
+      <div class="board-card rev d1" onclick="openBoardModal('jeevan')">
+        <div class="board-photo">
+          <div class="board-initial">J</div>
+          <div class="board-name-overlay"><h4>Mr. Jeevan Sagar</h4><span>Founder & President</span></div>
+        </div>
+        <div class="board-body">
+          <div class="board-quote">"Our goal is not to just help — it is to walk alongside people until they no longer need our help."</div>
+          <div class="board-socials">
+            <span class="social-btn li">LinkedIn</span>
+            <span class="social-btn fb">Facebook</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chandra Mouli -->
+      <div class="board-card rev d2" onclick="openBoardModal('chandra')">
+        <div class="board-photo" style="background:linear-gradient(135deg,#FEF5E4,#FDF3E0)">
+          <div class="board-initial" style="color:var(--am)">C</div>
+          <div class="board-name-overlay"><h4>Mr. Chandra Mouli</h4><span>Core Member</span></div>
+        </div>
+        <div class="board-body">
+          <div class="board-quote">"Every drop counts. Every action, however small, contributes to the ocean of change we are building."</div>
+          <div class="board-socials">
+            <span class="social-btn li">LinkedIn</span>
+            <span class="social-btn tw">Twitter</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hanumanth Rayadu -->
+      <div class="board-card rev d3" onclick="openBoardModal('hanuma')">
+        <div class="board-photo" style="background:linear-gradient(135deg,#E0F5F3,#D5F0EC)">
+          <div class="board-initial" style="color:#0A7A6B">H</div>
+          <div class="board-name-overlay"><h4>Mr. Hanumanth Rayadu</h4><span>Core Member</span></div>
+        </div>
+        <div class="board-body">
+          <div class="board-quote">"True service is when you give without expecting anything in return — that is the Ekathva spirit."</div>
+          <div class="board-socials">
+            <span class="social-btn li">LinkedIn</span>
+            <span class="social-btn ig">Instagram</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Board Member Modals -->
+<div class="bmodal-overlay" id="modal-jeevan" onclick="closeBoardModal(event,'modal-jeevan')">
+  <div class="bmodal">
+    <div class="bmodal-header">
+      <div class="bmodal-initial">J</div>
+      <div class="bmodal-name"><h3>Mr. Jeevan Sagar</h3><span>Founder & President · Ekathva Foundation</span></div>
+      <button class="bmodal-close" onclick="document.getElementById('modal-jeevan').classList.remove('open')">✕</button>
+    </div>
+    <div class="bmodal-body">
+      <p>Mr. Jeevan Sagar is the visionary founder of Ekathva Foundation Society, Anantapuramu. With deep roots in the community and a heart committed to social justice, he established Ekathva in 2020 with the belief that ordinary people can create extraordinary change.</p>
+      <p>Under his leadership, Ekathva has grown from a small volunteer group to a registered NGO touching thousands of lives across education, environment, women empowerment, and disaster response.</p>
+      <blockquote>"Our goal is not to just help — it is to walk alongside people until they no longer need our help. That is sustainable change."</blockquote>
+      <div class="bmodal-socials">
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn li">LinkedIn</a>
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn fb">Facebook</a>
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn ig">Instagram</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bmodal-overlay" id="modal-chandra" onclick="closeBoardModal(event,'modal-chandra')">
+  <div class="bmodal">
+    <div class="bmodal-header" style="background:linear-gradient(135deg,#7A4E0A,var(--am))">
+      <div class="bmodal-initial">C</div>
+      <div class="bmodal-name"><h3>Mr. Chandra Mouli</h3><span>Core Member · Ekathva Foundation</span></div>
+      <button class="bmodal-close" onclick="document.getElementById('modal-chandra').classList.remove('open')">✕</button>
+    </div>
+    <div class="bmodal-body">
+      <p>Mr. Chandra Mouli is one of the founding pillars of Ekathva Foundation, bringing operational strength and community network expertise that has been essential to the NGO's growth and reach across Anantapuramu.</p>
+      <p>His dedication to every cause — from the Kerala Flood Relief fundraising to the COVID-19 Health Line — reflects his belief that service is not an occasion but a way of life.</p>
+      <blockquote>"Every drop counts. Every action, however small, contributes to the ocean of change we are building together."</blockquote>
+      <div class="bmodal-socials">
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn li">LinkedIn</a>
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn tw">Twitter</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bmodal-overlay" id="modal-hanuma" onclick="closeBoardModal(event,'modal-hanuma')">
+  <div class="bmodal">
+    <div class="bmodal-header" style="background:linear-gradient(135deg,#0A5A50,#0A9B8A)">
+      <div class="bmodal-initial">H</div>
+      <div class="bmodal-name"><h3>Mr. Hanumanth Rayadu</h3><span>Core Member · Ekathva Foundation</span></div>
+      <button class="bmodal-close" onclick="document.getElementById('modal-hanuma').classList.remove('open')">✕</button>
+    </div>
+    <div class="bmodal-body">
+      <p>Mr. Hanumanth Rayadu's energy and grassroots connections have been instrumental in making Ekathva's programs reach the people who need them most. He brings warmth and tireless effort to every initiative.</p>
+      <p>His on-ground work during the Blankets Distribution drive and the Books Distribution program showed the depth of his commitment to Anantapuramu's communities.</p>
+      <blockquote>"True service is when you give without expecting anything in return. That is the Ekathva spirit — and it comes from the heart."</blockquote>
+      <div class="bmodal-socials">
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn li">LinkedIn</a>
+        <a href="https://ekathvafoundation.com" target="_blank" class="social-btn ig">Instagram</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COMMUNITY STRIP -->
+<div class="community-strip">
+  <div class="si">
+    <div class="slabel" style="justify-content:center;color:rgba(255,255,255,0.6)"><span style="background:rgba(255,255,255,0.3);width:20px;height:2px;display:inline-block;border-radius:2px"></span>Our Community</div>
+    <h2>Backed by <em style="color:#FFD580">thousands</em> who believe in one thing.</h2>
+    <p>Ekathva is not just three people — it is every donor, every volunteer, every person who shared a message or planted a tree or donated a blanket. This is your foundation too.</p>
+    <div class="donor-grid">
+      <div class="dstat"><div class="dnum">3000<span>+</span></div><div class="dlbl">Community Donors</div></div>
+      <div class="dstat"><div class="dnum">500<span>+</span></div><div class="dlbl">Active Volunteers</div></div>
+      <div class="dstat"><div class="dnum">5000<span>+</span></div><div class="dlbl">Lives Touched</div></div>
+      <div class="dstat"><div class="dnum">2500<span>+</span></div><div class="dlbl">3K Run Attendees</div></div>
+    </div>
+    <div style="margin-top:2rem">
+      <a href="#involved" class="btn btn-s" onclick="smoothTo(event,'#involved')" style="background:rgba(255,255,255,0.1);border:2px solid rgba(255,255,255,0.4);color:#fff">Join the Community →</a>
+    </div>
+  </div>
+</div>
+
+<!-- OUR WORK -->
+<section id="work" class="work">
+  <div class="si">
+    <div class="slabel rev">Our Work</div>
+    <h2 class="stitle rev">Four pillars that <em>transform</em> lives</h2>
+    <p class="ssub rev">Click any program to see real photos from our work at the official gallery.</p>
+    <div class="work-grid">
+
+      <div class="work-card rev d1" onclick="window.open('https://ekathvafoundation.com/#Photos','_blank')">
+        <div class="work-img">
+          <img src="https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/10.jpg" alt="Plantation Awareness" loading="lazy">
+          <div class="work-img-overlay"></div>
+          <div class="work-tag-over">🌿 Environment</div>
+        </div>
+        <div class="work-body">
+          <h3>Plantation Awareness</h3>
+          <p>Through the <strong>LiveInGreen 3K Run</strong> (2500+ participants), mass plantation campaigns, and our up-cycled "Green by Ekathva" product line, we're building a culture of environmental stewardship.</p>
+          <div class="work-link">View Photo Gallery <span>→</span></div>
+        </div>
+      </div>
+
+      <div class="work-card rev d2" onclick="window.open('https://ekathvafoundation.com/#Photos','_blank')">
+        <div class="work-img">
+          <img src="https://ekathvafoundation.com/Gallery/BooksDistributionDec2019/111.jpg" alt="Education" loading="lazy">
+          <div class="work-img-overlay"></div>
+          <div class="work-tag-over">📚 Education</div>
+        </div>
+        <div class="work-body">
+          <h3>Education</h3>
+          <p>Books distribution drives, old age home renovations, school stationery collection, and our "School to School" initiative connecting urban resources with rural needs.</p>
+          <div class="work-link">View Photo Gallery <span>→</span></div>
+        </div>
+      </div>
+
+      <div class="work-card rev d3" onclick="window.open('https://ekathvafoundation.com/#Photos','_blank')">
+        <div class="work-img" style="background:linear-gradient(135deg,#FDF0F4,#F9E0EA);display:flex;align-items:center;justify-content:center">
+          <img src="https://ekathvafoundation.com/Gallery/RoadSafetyMarch2019/3.jpg" alt="Women Empowerment" loading="lazy" onerror="this.style.display='none'">
+          <div class="work-img-overlay"></div>
+          <div class="work-tag-over">👩 Empowerment</div>
+        </div>
+        <div class="work-body">
+          <h3>Women Empowerment</h3>
+          <p>Breaking the culture of silence around menstruation, advocating for women's dignity, and connecting women to skill-building and livelihood opportunities across the district.</p>
+          <div class="work-link">View Photo Gallery <span>→</span></div>
+        </div>
+      </div>
+
+      <div class="work-card rev d4" onclick="window.open('https://ekathvafoundation.com/#Photos','_blank')">
+        <div class="work-img">
+          <img src="https://ekathvafoundation.com/Gallery/BlanketsDistNov9th-2019/113.jpg" alt="Disaster Response" loading="lazy">
+          <div class="work-img-overlay"></div>
+          <div class="work-tag-over">🛡 Disaster Response</div>
+        </div>
+        <div class="work-body">
+          <h3>Disaster Response</h3>
+          <p>From blanket distributions in winter, to Kerala flood relief fundraising, to the COVID-19 Health Line coordinating ambulances, blood donors, oxygen and medicine — we move fast.</p>
+          <div class="work-link">View Photo Gallery <span>→</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery">
+  <div class="si">
+    <div class="slabel rev">Gallery</div>
+    <h2 class="stitle rev">Real moments from <em>real impact</em></h2>
+    <p class="ssub rev">Photos and videos from our events across Anantapuramu and beyond.</p>
+
+    <div class="gallery-tabs">
+      <button class="gtab active" onclick="switchTab('photos')">📸 Photo Gallery</button>
+      <button class="gtab" onclick="switchTab('videos')">🎬 Video Gallery</button>
+    </div>
+
+    <!-- PHOTOS -->
+    <div class="gset active photos-grid" id="tab-photos">
+
+      <!-- LiveInGreen 3K Run -->
+      <div class="photo-item rev d1" onclick="openLightbox('https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/10.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/10.jpg" alt="LiveInGreen Run" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">LiveInGreen 3K Run</span></div>
+      </div>
+      <div class="photo-item rev d2" onclick="openLightbox('https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/44.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/44.jpg" alt="Plants Distribution" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Plants Distribution</span></div>
+      </div>
+      <div class="photo-item rev d3" onclick="openLightbox('https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/1.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/1.jpg" alt="3K Run 2018" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">3K Run · Aug 2018</span></div>
+      </div>
+      <div class="photo-item rev d1" onclick="openLightbox('https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/5.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/5.jpg" alt="Green Run" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">LiveInGreen Campaign</span></div>
+      </div>
+
+      <!-- Blankets Distribution -->
+      <div class="photo-item rev d2" onclick="openLightbox('https://ekathvafoundation.com/Gallery/BlanketsDistNov9th-2019/113.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/BlanketsDistNov9th-2019/113.jpg" alt="Blankets Distribution" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Blankets Distribution 2019</span></div>
+      </div>
+      <div class="photo-item rev d3" onclick="openLightbox('https://ekathvafoundation.com/Gallery/BlanketsDistNov9th-2019/111.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/BlanketsDistNov9th-2019/111.jpg" alt="Blankets Nov 2019" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Winter Relief · Nov 2019</span></div>
+      </div>
+
+      <!-- Books Distribution -->
+      <div class="photo-item rev d1" onclick="openLightbox('https://ekathvafoundation.com/Gallery/BooksDistributionDec2019/111.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/BooksDistributionDec2019/111.jpg" alt="Books Distribution" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Books Distribution 2019</span></div>
+      </div>
+      <div class="photo-item rev d2" onclick="openLightbox('https://ekathvafoundation.com/Gallery/BooksDistributionDec2019/112.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/BooksDistributionDec2019/112.jpg" alt="Books Dec 2019" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Education Drive · Dec 2019</span></div>
+      </div>
+
+      <!-- Roof Renovation -->
+      <div class="photo-item rev d3" onclick="openLightbox('https://ekathvafoundation.com/Gallery/RoofRenovationOct2020/112.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/RoofRenovationOct2020/112.jpg" alt="Roof Renovation" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Old Age Home Renovation</span></div>
+      </div>
+      <div class="photo-item rev d1" onclick="openLightbox('https://ekathvafoundation.com/Gallery/RoofRenovationOct2020/113.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/RoofRenovationOct2020/113.jpg" alt="Renovation 2020" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Gandhi Jayanti · Oct 2020</span></div>
+      </div>
+
+      <!-- Kerala Flood -->
+      <div class="photo-item rev d2" onclick="openLightbox('https://ekathvafoundation.com/Gallery/KERALAFLOODREFLIEF2018/111.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/KERALAFLOODREFLIEF2018/111.jpg" alt="Kerala Flood Relief" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Kerala Flood Relief 2018</span></div>
+      </div>
+      <div class="photo-item rev d3" onclick="openLightbox('https://ekathvafoundation.com/Gallery/RoadSafetyMarch2019/1.jpg')">
+        <img src="https://ekathvafoundation.com/Gallery/RoadSafetyMarch2019/1.jpg" alt="Road Safety" loading="lazy">
+        <div class="photo-item-overlay"><span class="photo-item-label">Road Safety Awareness 2019</span></div>
+      </div>
+
+    </div>
+
+    <!-- VIDEOS -->
+    <div class="gset videos-grid" id="tab-videos">
+      <div class="video-card rev d1">
+        <div class="video-thumb" onclick="window.open('https://ekathvafoundation.com/#Videos','_blank')">
+          <img src="https://ekathvafoundation.com/Gallery/LIVEINGREEN3KRUNAUG5th2018/000.jpg" alt="LiveInGreen Video" loading="lazy" onerror="this.style.background='var(--g)';this.style.display='none'">
+          <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <h4>LiveInGreen 3K Run — Aug 2018</h4>
+          <p>Plantation awareness run with 2500+ participants · Anantapuramu</p>
+        </div>
+      </div>
+      <div class="video-card rev d2">
+        <div class="video-thumb" onclick="window.open('https://ekathvafoundation.com/#Videos','_blank')">
+          <img src="https://ekathvafoundation.com/Gallery/BlanketsDistNov9th-2019/113.jpg" alt="Blankets Video" loading="lazy">
+          <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <h4>Blankets Distribution Drive — Nov 2019</h4>
+          <p>Winter relief distribution to families in need across Anantapuramu</p>
+        </div>
+      </div>
+      <div class="video-card rev d3">
+        <div class="video-thumb" onclick="window.open('https://ekathvafoundation.com/#Videos','_blank')">
+          <img src="https://ekathvafoundation.com/Gallery/RoofRenovationOct2020/112.jpg" alt="Renovation Video" loading="lazy">
+          <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        </div>
+        <div class="video-info">
+          <h4>Old Age Home Renovation — Oct 2020</h4>
+          <p>Gandhi Jayanti special project · Roof renovation for elderly residents</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-more rev">
+      <a href="https://ekathvafoundation.com/#Photos" target="_blank" class="btn btn-s">View Full Gallery on Official Site ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close">✕</button>
+  <img id="lightbox-img" src="" alt="Gallery photo">
+</div>
+
+<!-- ROADMAP / JOURNEY -->
+<section id="roadmap" class="roadmap">
+  <div class="si">
+    <div class="slabel rev">Our Journey</div>
+    <h2 class="stitle rev">A roadmap of <em>purposeful milestones</em></h2>
+    <p class="ssub rev">Every moment on this timeline represents real people helped, real communities strengthened, real lives changed.</p>
+
+    <div class="timeline">
+      <div class="titem rev d1">
+        <div class="tcontent">
+          <div class="tyear">2015</div>
+          <h4>ATP Prayanam Launched</h4>
+          <p>Community carpooling initiative connecting Anantapur ↔ Bangalore travellers through trust-based ride sharing. Still running strong today.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d2">
+        <div class="tcontent">
+          <div class="tyear">2018 · August</div>
+          <h4>LiveInGreen 3K Run</h4>
+          <p>Landmark environmental campaign attracting 2500+ participants. Distributed 2000 plants. Put Anantapuramu on the map for community-led environmental action.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d1">
+        <div class="tcontent">
+          <div class="tyear">2018 · Mid Year</div>
+          <h4>Stand With Kerala</h4>
+          <p>Kerala Flood Relief fundraising — Anantapuramu's community donated funds, dairy products, sanitation materials, biscuits and clothing for flood-hit families.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d2">
+        <div class="tcontent">
+          <div class="tyear">2019 · March</div>
+          <h4>Road Safety Awareness Program</h4>
+          <p>Community-wide road safety education initiative targeting accident-prone zones and school areas across Anantapuramu district.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d1">
+        <div class="tcontent">
+          <div class="tyear">2019 · November</div>
+          <h4>Blankets Distribution Drive</h4>
+          <p>Winter relief — blankets distributed to homeless and vulnerable families across Anantapuramu on November 8th, 2019. Dignity in cold weather.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d2">
+        <div class="tcontent">
+          <div class="tyear">2019 · December</div>
+          <h4>Books Distribution Program</h4>
+          <p>Quality books and stationery provided to underprivileged students on December 2nd, 2019 — bridging the educational gap one classroom at a time.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d1">
+        <div class="tcontent">
+          <div class="tyear">2020 · Registered</div>
+          <h4>Ekathva Foundation Officially Registered</h4>
+          <p>Formally registered with the Government of Andhra Pradesh as Ekathva Foundation Society (Registration No. 66 of 2020). A milestone that enables greater impact.</p>
+        </div>
+        <div class="tdot" style="background:var(--am);box-shadow:0 0 0 3px var(--am)"></div>
+      </div>
+      <div class="titem rev d2">
+        <div class="tcontent">
+          <div class="tyear">2020 · October 2</div>
+          <h4>Old Age Home Roof Renovation</h4>
+          <p>Complete roof renovation of a local old age home on Gandhi Jayanti — ensuring safety, comfort and dignity for elderly residents of Anantapuramu.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="titem rev d1">
+        <div class="tcontent">
+          <div class="tyear">2020–2021</div>
+          <h4>Ekathva COVID-19 Health Line</h4>
+          <p>24×7 emergency coordination: hospital beds, ambulances, tele-consultations, blood and plasma donors, oxygen cylinders, food and medicine delivery — across Andhra Pradesh at the height of the pandemic.</p>
+        </div>
+        <div class="tdot" style="background:var(--am);box-shadow:0 0 0 3px var(--am)"></div>
+      </div>
+      <div class="titem rev d2">
+        <div class="tcontent">
+          <div class="tyear">2021 – Present</div>
+          <h4>Ongoing Education & Women Empowerment</h4>
+          <p>Continuous programs across education support, menstrual health awareness, women's skill-building, and community leadership development across Anantapuramu.</p>
+        </div>
+        <div class="tdot"></div>
+      </div>
+      <div class="timeline-end rev">
+        <div class="tec">🌟 This story is still being written — and you can be part of it.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="impact">
+  <div class="si">
+    <div class="slabel rev" style="color:rgba(255,255,255,0.6)"><span style="background:rgba(255,255,255,0.3);width:20px;height:2px;display:inline-block;border-radius:2px"></span>Our Impact</div>
+    <h2 class="stitle rev" style="color:#fff">Numbers that tell a <em style="color:#FFD580">real story</em></h2>
+    <div class="impact-grid">
+      <div class="icard rev d1"><div class="inum">5000<span>+</span></div><div class="ilbl">Lives Directly Touched</div></div>
+      <div class="icard rev d2"><div class="inum">3000<span>+</span></div><div class="ilbl">Community Donors</div></div>
+      <div class="icard rev d3"><div class="inum">10<span>+</span></div><div class="ilbl">Events & Campaigns</div></div>
+      <div class="icard rev d4"><div class="inum">4</div><div class="ilbl">Core Programs</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GET INVOLVED -->
+<section id="involved" class="involved">
+  <div class="si">
+    <div class="slabel rev">Get Involved</div>
+    <h2 class="stitle rev">Be the change you <em>wish to see</em></h2>
+    <div class="involved-wrap rev" style="margin-top:2.5rem">
+      <div class="involved-text">
+        <div class="slabel">Join Ekathva</div>
+        <h2 class="stitle" style="font-size:clamp(1.7rem,3.5vw,2.3rem)">Your contribution<br><em>changes lives.</em></h2>
+        <p class="ssub" style="margin-top:0.85rem">Every rupee, every hour, every skill you offer — amplifies what we can do together for Anantapuramu and beyond. No contribution is too small.</p>
+        <blockquote>"Volunteers don't necessarily have time, but they have heart. In helping others, you help yourself most of all." — Mahatma Gandhi</blockquote>
+      </div>
+      <div class="inv-options">
+        <button class="inv-opt" onclick="openModal(event,'donateModal')">
+          <div class="inv-opt-icon">❤️</div>
+          <div class="inv-opt-text"><strong>Donate</strong><span>Support our programs financially via UPI or bank transfer</span></div>
+          <span class="inv-arr">→</span>
+        </button>
+        <a href="mailto:ekathvafoundationatp@gmail.com?subject=Volunteer Registration — Ekathva Foundation" class="inv-opt">
+          <div class="inv-opt-icon">🙋</div>
+          <div class="inv-opt-text"><strong>Volunteer</strong><span>Give your time, energy, and skills to the cause</span></div>
+          <span class="inv-arr">→</span>
+        </a>
+        <a href="mailto:ekathvafoundationatp@gmail.com?subject=Sponsorship Enquiry — Ekathva Foundation" class="inv-opt">
+          <div class="inv-opt-icon">🤝</div>
+          <div class="inv-opt-text"><strong>Sponsor a Program</strong><span>Partner with us for lasting, measurable impact</span></div>
+          <span class="inv-arr">→</span>
+        </a>
+        <a href="https://ekathvafoundation.com/#Videos" target="_blank" class="inv-opt">
+          <div class="inv-opt-icon">📣</div>
+          <div class="inv-opt-text"><strong>Spread the Word</strong><span>Share our work — awareness is half the battle</span></div>
+          <span class="inv-arr">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Membership Banner -->
+    <div class="member-banner rev" style="margin-top:2rem">
+      <div>
+        <h4>📋 Membership Registration</h4>
+        <p>Join Ekathva as an official member and be part of the movement. Fill in the registration form on the official site.</p>
+      </div>
+      <a href="https://ekathvafoundation.com/MemberRegistrationPage.aspx" target="_blank" class="mbtn">Register as Member →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="si">
+    <div class="slabel rev">Contact Us</div>
+    <h2 class="stitle rev">We'd love to <em>hear from you</em></h2>
+    <div class="contact-grid">
+      <div class="cinfo">
+        <div class="citem rev d1">
+          <div class="cicon">📧</div>
+          <div class="ctext"><strong>Email</strong><a href="mailto:ekathvafoundationatp@gmail.com">ekathvafoundationatp@gmail.com</a></div>
+        </div>
+        <div class="citem rev d2">
+          <div class="cicon">📞</div>
+          <div class="ctext"><strong>Phone</strong><a href="tel:+918106819536">+91 – 8106819536</a><a href="tel:+917338009486">+91 – 7338009486</a></div>
+        </div>
+        <div class="citem rev d3">
+          <div class="cicon">📍</div>
+          <div class="ctext"><strong>Address</strong><p>D.No. 7-156, Prakash Road,<br>Anantapuramu, Andhra Pradesh — 515001</p></div>
+        </div>
+        <div class="citem rev d4">
+          <div class="cicon">🏛</div>
+          <div class="ctext"><strong>Registration</strong><p>Govt. of Andhra Pradesh<br>Registration No. 66 of 2020</p></div>
+        </div>
+        <div class="citem rev d1">
+          <div class="cicon">🌐</div>
+          <div class="ctext"><strong>Official Website</strong><a href="https://ekathvafoundation.com" target="_blank">ekathvafoundation.com ↗</a></div>
+        </div>
+      </div>
+
+      <div class="cform rev d2">
+        <h3>Send a Message</h3>
+        <p class="fnote">Your message will be sent directly to <strong>ekathvafoundationatp@gmail.com</strong> when you click Send.</p>
+        <div class="fg-row">
+          <div class="fg"><label>Your Name</label><input type="text" id="fname" placeholder="Full name"></div>
+          <div class="fg"><label>Phone (optional)</label><input type="tel" id="fphone" placeholder="+91 XXXXX XXXXX"></div>
+        </div>
+        <div class="fg"><label>Email Address</label><input type="email" id="femail" placeholder="your@email.com"></div>
+        <div class="fg"><label>Subject</label><input type="text" id="fsubject" placeholder="How can we help?"></div>
+        <div class="fg"><label>Message</label><textarea id="fmessage" placeholder="Tell us about your interest in volunteering, donating, or getting involved..."></textarea></div>
+        <button class="fsub" onclick="sendMail()">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="si">
+    <div class="footer-grid">
+      <div class="fbrand">
+        <img src="https://ekathvafoundation.com/Images/logo.png" alt="Ekathva Foundation" onerror="this.style.display='none'">
+        <strong style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fff;display:block">Ekathva Foundation Society</strong>
+        <p>A registered NGO building bridges between communities through compassion, action, and unity across Andhra Pradesh since 2020.</p>
+        <div class="official-note">
+          🌐 This is a tribute site. For official information visit:<br>
+          <a href="https://ekathvafoundation.com" target="_blank">ekathvafoundation.com</a>
+        </div>
+      </div>
+      <div class="fcol">
+        <h4>Organisation</h4>
+        <a href="#about" onclick="smoothTo(event,'#about')">About Us</a>
+        <a href="#about" onclick="smoothTo(event,'#about')">Vision & Mission</a>
+        <a href="#board" onclick="smoothTo(event,'#board')">Board Members</a>
+        <a href="#roadmap" onclick="smoothTo(event,'#roadmap')">Our Journey</a>
+      </div>
+      <div class="fcol">
+        <h4>Programs</h4>
+        <a href="https://ekathvafoundation.com/#Photos" target="_blank">Plantation Awareness</a>
+        <a href="https://ekathvafoundation.com/#Photos" target="_blank">Education</a>
+        <a href="https://ekathvafoundation.com/#Photos" target="_blank">Women Empowerment</a>
+        <a href="https://ekathvafoundation.com/#Photos" target="_blank">Disaster Response</a>
+      </div>
+      <div class="fcol">
+        <h4>Get Involved</h4>
+        <a href="#" onclick="openModal(event,'donateModal')">Donate</a>
+        <a href="mailto:ekathvafoundationatp@gmail.com">Volunteer</a>
+        <a href="https://ekathvafoundation.com/MemberRegistrationPage.aspx" target="_blank">Membership</a>
+        <a href="#contact" onclick="smoothTo(event,'#contact')">Contact Us</a>
+      </div>
+    </div>
+    <div class="fbot">
+      <p>© 2020–2025 Ekathva Foundation Society. All Rights Reserved. Govt. of AP Registration No. 66 of 2020.</p>
+      <div class="fbot-links">
+        <a href="https://ekathvafoundation.com" target="_blank">Official Site ↗</a>
+        <a href="https://ekathvafoundation.com" target="_blank">Privacy Policy</a>
+        <a href="https://ekathvafoundation.com" target="_blank">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- DONATE MODAL -->
+<div class="modal-overlay" id="donateModal" onclick="closeOnOverlay(event,'donateModal')">
+  <div class="modal">
+    <div class="mhead">
+      <button class="mclose" onclick="document.getElementById('donateModal').classList.remove('open');document.body.style.overflow=''">✕</button>
+      <h3>Support Ekathva Foundation</h3>
+      <p>Every rupee goes directly to our programs. Transparent, accountable impact.</p>
+    </div>
+    <div class="mbody">
+      <div class="brow"><span class="bk">Account Name</span><span class="bv">Ekathva Foundation Society</span></div>
+      <div class="brow"><span class="bk">Account Number</span><span class="bv">5020 0056 8511 51</span></div>
+      <div class="brow"><span class="bk">Bank</span><span class="bv">HDFC Bank</span></div>
+      <div class="brow"><span class="bk">Branch</span><span class="bv">Ram Nagar, Anantapuramu</span></div>
+      <div class="brow"><span class="bk">IFSC Code</span><span class="bv">HDFC0004246</span></div>
+      <div class="brow"><span class="bk">Account Type</span><span class="bv">Current Account</span></div>
+      <div class="upi-pill" style="margin-top:1rem">
+        <small>GPay / PhonePe / Any UPI App</small>
+        <p>8106819536@hdfcbank</p>
+      </div>
+      <p style="font-size:0.75rem;color:var(--ts);margin-top:0.85rem;text-align:center">💡 50% tax exemption under Section 80G · Write to us with PAN for receipt</p>
+    </div>
+  </div>
+</div>
+
+<!-- SCROLL TO TOP -->
+<button class="stt" id="stt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24"><polyline points="18,15 12,9 6,15"/></svg>
+</button>
+
+<script>
+// Smooth scroll
+function smoothTo(e,id){
+  e&&e.preventDefault();
+  const el=document.querySelector(id);
+  if(el){const y=el.getBoundingClientRect().top+window.scrollY-80;window.scrollTo({top:y,behavior:'smooth'})}
+}
+
+// Navbar scroll
+const nav=document.getElementById('nav');
+const stt=document.getElementById('stt');
+window.addEventListener('scroll',()=>{
+  const sy=window.scrollY;
+  nav.classList.toggle('scrolled',sy>50);
+  stt.classList.toggle('visible',sy>400);
+});
+
+// Mobile menu
+function toggleMenu(){
+  const h=document.getElementById('hamburger');
+  const m=document.getElementById('mobileMenu');
+  h.classList.toggle('open');
+  m.classList.toggle('open');
+  document.body.style.overflow=m.classList.contains('open')?'hidden':'';
+}
+function closeMenu(){
+  document.getElementById('hamburger').classList.remove('open');
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.body.style.overflow='';
+}
+
+// Modals
+function openModal(e,id){
+  e&&e.preventDefault();
+  document.getElementById(id).classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeOnOverlay(e,id){
+  if(e.target===document.getElementById(id)){
+    document.getElementById(id).classList.remove('open');
+    document.body.style.overflow='';
+  }
+}
+
+// Board modals
+function openBoardModal(key){
+  document.getElementById('modal-'+key).classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeBoardModal(e,id){
+  if(e.target===document.getElementById(id)){
+    document.getElementById(id).classList.remove('open');
+    document.body.style.overflow='';
+  }
+}
+
+// Vision/Mission toggle
+function toggleVM(id){
+  const block=document.getElementById(id);
+  const body=document.getElementById(id+'-body');
+  const isOpen=block.classList.contains('open');
+  block.classList.toggle('open',!isOpen);
+  body.classList.toggle('open',!isOpen);
+}
+
+// Gallery tabs
+function switchTab(tab){
+  document.querySelectorAll('.gtab').forEach((t,i)=>{
+    const tabs=['photos','videos'];
+    t.classList.toggle('active',tabs[i]===tab);
+  });
+  document.getElementById('tab-photos').classList.toggle('active',tab==='photos');
+  document.getElementById('tab-videos').classList.toggle('active',tab==='videos');
+}
+
+// Lightbox
+function openLightbox(src){
+  document.getElementById('lightbox-img').src=src;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow='';
+}
+
+// Contact form → mailto
+function sendMail(){
+  const name=document.getElementById('fname').value.trim();
+  const email=document.getElementById('femail').value.trim();
+  const phone=document.getElementById('fphone').value.trim();
+  const subject=document.getElementById('fsubject').value.trim()||'Message from Ekathva Tribute Site';
+  const msg=document.getElementById('fmessage').value.trim();
+  if(!name||!email||!msg){alert('Please fill in your name, email, and message.');return;}
+  const body=`Name: ${name}\nEmail: ${email}\nPhone: ${phone||'Not provided'}\n\nMessage:\n${msg}`;
+  window.location.href=`mailto:ekathvafoundationatp@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+// Scroll reveal
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}});
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rev').forEach(el=>obs.observe(el));
+
+// Keyboard close for lightbox
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){
+    closeLightbox();
+    document.querySelectorAll('.modal-overlay,.bmodal-overlay').forEach(m=>{
+      m.classList.remove('open');
+      document.body.style.overflow='';
+    });
+  }
+});
+</script>
+</body>
+</html>
